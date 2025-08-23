@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ambulance Routing - Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <style>
+        #map { height: 80vh; width: 100%; }
+        body { margin:0; padding:0; }
+        .controls { padding: 10px; }
+        .info-panel { padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+<div class="controls">
+    <label for="startNode">Start Node ID:</label>
+    <input type="number" id="startNode" value="1" min="1">
+    <button id="findRouteBtn">Find Nearest Hospital</button>
+</div>
+
+<div id="map"></div>
+<div class="info-panel">
+    <p id="routeInfo">Route Info: N/A</p>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    const map = L.map('map').setView([13.0827, 80.2707], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    let routeLayer = null;
+    let startMarker = null;
+    let hospitalMarker = null;
+
+    document.getElementById('findRouteBtn').addEventListener('click', async () => {
+        const startNode = parseInt(document.getElementById('startNode').value);
+        if (!startNode) return alert('Enter a valid start node ID');
+
+        try {
+            const res = await axios.post('/api/find_nearest_hospital', { start_node: startNode });
+            const data = res.data;
+
+            // Remove old markers/routes
+            if (routeLayer) map.removeLayer(routeLayer);
+            if (startMarker) map.removeLayer(startMarker);
+            if (hospitalMarker) map.removeLayer(hospitalMarker);
+
+            // Draw the route
+            const latlngs = data.path.map(p => [p.lat, p.lng]);
+            routeLayer = L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
+            map.fitBounds(routeLayer.getBounds());
+
+            // Add start marker
+            startMarker = L.marker(latlngs[0])
+                .addTo(map)
+                .bindPopup(`Start: ${data.path_names[0]}`)
+                .openPopup();
+
+            // Add hospital marker
+            hospitalMarker = L.marker(latlngs[latlngs.length - 1], {
+                icon: L.icon({
+                    iconUrl: '/static/img/hospital.png', // put a hospital icon here
+                    iconSize: [30, 30]
+                })
+            })
+            .addTo(map)
+            .bindPopup(`Hospital: ${data.path_names[data.path_names.length - 1]}`)
+            .openPopup();
+
+            // Update info panel
+            document.getElementById('routeInfo').textContent =
+                `Nearest Hospital: ${data.path_names[data.path_names.length-1]} | Distance: ${data.distance} km | ETA: ${data.eta} mins`;
+
+        } catch (err) {
+            console.error(err);
+            alert('Failed to find route. Check backend or node ID.');
+        }
+    });
+</script>
+</body>
+</html>
