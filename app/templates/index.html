@@ -3,128 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ambulance Chennai Router - Emergency Response System</title>
+    <title>Chennai Ambulance Router - Emergency Response System</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        .suggestions {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            border: 1px solid #ccc;
-            max-height: 200px;
-            overflow-y: auto;
-            z-index: 1000;
-            display: none;
-        }
-
-        .suggestion-item {
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #eee;
-        }
-
-        .suggestion-item:hover {
-            background: #f0f0f0;
-        }
-
-        .info-panel {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            background: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-
-        .info-panel.show {
-            transform: translateY(0);
-        }
-
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-
-        .search-container {
-            position: relative;
-        }
-    </style>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    <div>
-        
-        <header>
-            <div>
-                <div>
-                    <i class="fas fa-ambulance"></i>
-                    Chennai Ambulance Emergency Router
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="brand">
+                    <i class="fas fa-ambulance brand-icon"></i>
+                    <span class="brand-text">Chennai Emergency Router</span>
+                </div>
+                <div class="emergency-badge">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Emergency: 108</span>
                 </div>
             </div>
         </header>
 
-        
-        <main>
-            
-            <aside>
-                <div>
-                    <h2>
+        <main class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2 class="sidebar-title">
                         <i class="fas fa-route"></i>
                         Route Finder
                     </h2>
-                    <p>Find the nearest hospital for emergency care</p>
+                    <p class="sidebar-description">Locate the nearest hospital for emergency medical assistance</p>
                 </div>
 
-                <div>
-                    <div>
-                        <div>
-                            <label for="startNodeSearch">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Emergency Location
-                            </label>
-                            <div class="search-container">
-                                <i class="fas fa-search"></i>
-                                <input type="text" id="startNodeSearch" placeholder="Search location or click on map...">
+                <div class="search-section">
+                    <div class="form-group">
+                        <label for="startNodeSearch" class="form-label">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Emergency Location
+                        </label>
+                        <div class="search-container">
+                            <div class="search-input-wrapper">
+                                <i class="fas fa-search search-icon"></i>
+                                <input 
+                                    type="text" 
+                                    id="startNodeSearch" 
+                                    class="search-input"
+                                    placeholder="Search location or click on map..."
+                                    autocomplete="off"
+                                >
                                 <div id="suggestions" class="suggestions"></div>
                             </div>
                         </div>
-
-                        <button id="findRouteBtn">
-                            <i class="fas fa-hospital"></i>
-                            Find Nearest Hospital
-                        </button>
                     </div>
+
+                    <button id="findRouteBtn" class="find-route-btn">
+                        <i class="fas fa-hospital"></i>
+                        <span>Find Nearest Hospital</span>
+                    </button>
+                </div>
+
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span class="status-text">System Online</span>
                 </div>
             </aside>
 
-         
-            <div>
-                <div id="map"></div>
-                
-               
-                <div id="infoPanel" class="info-panel">
-                    <div>
-                        <div>
-                            <i class="fas fa-hospital"></i>
+            <div class="map-section">
+                <div class="map-container">
+                    <div id="map" class="map"></div>
+                    
+                    <div id="infoPanel" class="info-panel">
+                        <div class="info-header">
+                            <div class="info-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="info-title">
+                                <div id="hospitalName" class="hospital-name">Route Information</div>
+                                <div class="route-status">Emergency Route Active</div>
+                            </div>
                         </div>
-                        <div>
-                            <div id="hospitalName">Route Information</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <span id="distanceValue">0</span>
-                            <span>Distance (km)</span>
-                        </div>
-                        <div>
-                            <span id="etaValue">0</span>
-                            <span>ETA (mins)</span>
+                        <div class="info-stats">
+                            <div class="stat-item">
+                                <span id="distanceValue" class="stat-value">0</span>
+                                <span class="stat-label">Distance (km)</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span id="etaValue" class="stat-value">0</span>
+                                <span class="stat-label">ETA (mins)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +99,6 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <script>
         const map = L.map('map', {
             zoomControl: false
@@ -162,13 +126,13 @@
         });
 
         const locationIcon = L.divIcon({
-            html: '<i class="fas fa-map-marker-alt" style="color: #3b82f6; font-size: 16px;"></i>',
+            html: '<i class="fas fa-map-marker-alt" style="color: #4f46e5; font-size: 16px;"></i>',
             iconSize: [20, 20],
             className: 'custom-div-icon'
         });
 
         const emergencyIcon = L.divIcon({
-            html: '<i class="fas fa-ambulance" style="color: #ef4444; font-size: 20px;"></i>',
+            html: '<i class="fas fa-ambulance" style="color: #dc2626; font-size: 20px;"></i>',
             iconSize: [25, 25],
             className: 'custom-div-icon'
         });
@@ -180,7 +144,7 @@
 
                 allNodes.forEach(node => {
                     const icon = node.type === 'hospital' ? hospitalIcon : locationIcon;
-                    const color = node.type === 'hospital' ? '#dc2626' : '#3b82f6';
+                    const color = node.type === 'hospital' ? '#dc2626' : '#4f46e5';
                     
                     L.marker([node.lat, node.lon], { icon })
                         .addTo(map)
@@ -207,7 +171,7 @@
             suggestionsDiv.innerHTML = '';
 
             if (query.length === 0) {
-                suggestionsDiv.style.display = 'none';
+                suggestionsDiv.classList.remove('show');
                 return;
             }
 
@@ -216,29 +180,29 @@
             );
 
             if (matches.length > 0) {
-                suggestionsDiv.style.display = 'block';
+                suggestionsDiv.classList.add('show');
                 matches.slice(0, 8).forEach(node => {
                     const div = document.createElement('div');
                     div.className = 'suggestion-item';
                     div.innerHTML = `
                         <i class="fas ${node.type === 'hospital' ? 'fa-hospital' : 'fa-map-marker-alt'}" 
-                           style="color: ${node.type === 'hospital' ? '#dc2626' : '#3b82f6'}"></i>
+                           style="color: ${node.type === 'hospital' ? '#dc2626' : '#4f46e5'}"></i>
                         <span>${node.name}</span>
                     `;
                     div.addEventListener('click', () => {
                         selectLocation(node);
-                        suggestionsDiv.style.display = 'none';
+                        suggestionsDiv.classList.remove('show');
                     });
                     suggestionsDiv.appendChild(div);
                 });
             } else {
-                suggestionsDiv.style.display = 'none';
+                suggestionsDiv.classList.remove('show');
             }
         });
 
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.search-container')) {
-                suggestionsDiv.style.display = 'none';
+                suggestionsDiv.classList.remove('show');
             }
         });
 
@@ -246,9 +210,7 @@
             selectedStartNodeId = node.id;
             searchInput.value = node.name;
 
-        
             if (startMarker) map.removeLayer(startMarker);
-            
 
             startMarker = L.marker([node.lat, node.lon], { icon: emergencyIcon })
                 .addTo(map)
@@ -260,7 +222,6 @@
                 `)
                 .openPopup();
 
-            
             map.setView([node.lat, node.lon], 14);
         }
 
@@ -299,7 +260,7 @@
             }
 
             const originalContent = findRouteBtn.innerHTML;
-            findRouteBtn.innerHTML = 'Finding Route...';
+            findRouteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Finding Route...</span>';
             findRouteBtn.disabled = true;
 
             try {
@@ -324,7 +285,7 @@
                     .addTo(map)
                     .bindPopup(`
                         <div style="text-align: center;">
-                            <strong> ${data.path_names[data.path_names.length-1]}</strong><br>
+                            <strong>${data.path_names[data.path_names.length-1]}</strong><br>
                         </div>
                     `)
                     .openPopup();
@@ -352,7 +313,7 @@
         }
 
         function showNotification(message, type = 'info') {
-            alert(message); 
+            alert(message);
         }
 
         console.log('🚨 Chennai Emergency Router initialized');
