@@ -813,124 +813,365 @@
       "osm_id": "way/345675",
       "priority": "high"
     },
-    {
-      "id": 76,
-      "name": "Kanchipuram District Hospital",
-      "lat": 12.8342,
-      "lon": 79.7036,
-      "type": "hospital",
-      "subtype": "government",
-      "osm_id": "way/456780",
-      "priority": "medium",
-      "beds": 400,
-      "emergency": true,
-      "trauma_center": false
-    },
-    {
-      "id": 77,
-      "name": "Tiruvallur Government Hospital",
-      "lat": 13.1439,
-      "lon": 79.9094,
-      "type": "hospital",
-      "subtype": "government",
-      "osm_id": "way/456781",
-      "priority": "medium",
-      "beds": 250,
-      "emergency": true,
-      "trauma_center": false
-    },
-    {
-      "id": 78,
-      "name": "Maraimalai Nagar",
-      "lat": 12.769,
-      "lon": 80.0335,
-      "type": "suburban",
-      "osm_id": "way/456782",
-      "priority": "low"
-    },
-    {
-      "id": 79,
-      "name": "Sriperumbudur Industrial Hub",
-      "lat": 12.9655,
-      "lon": 79.9426,
-      "type": "industrial",
-      "osm_id": "way/456783",
-      "priority": "medium"
-    },
-    {
-      "id": 80,
-      "name": "Oragadam Industrial Area",
-      "lat": 12.9358,
-      "lon": 79.9624,
-      "type": "industrial",
-      "osm_id": "way/456784",
-      "priority": "medium"
-    },
-    {
-      "id": 81,
-      "name": "Cancer Institute Adyar",
-      "lat": 13.0067,
-      "lon": 80.2572,
-      "type": "hospital",
-      "subtype": "private",
-      "osm_id": "way/567881",
-      "priority": "critical",
-      "beds": 250,
-      "emergency": false,
-      "speciality": "oncology"
-    },
-    {
-      "id": 82,
-      "name": "National Institute of Siddha",
-      "lat": 12.9229,
-      "lon": 80.1275,
-      "type": "hospital",
-      "subtype": "government",
-      "osm_id": "way/567882",
-      "priority": "low",
-      "beds": 100,
-      "emergency": false,
-      "speciality": "traditional_medicine"
-    },
-    {
-      "id": 83,
-      "name": "AIIMS Bibinagar (Satellite Center)",
-      "lat": 12.82,
-      "lon": 80.22,
-      "type": "hospital",
-      "subtype": "government",
-      "osm_id": "way/567883",
-      "priority": "critical",
-      "beds": 200,
-      "emergency": true,
-      "trauma_center": false
-    },
-    {
-      "id": 84,
-      "name": "Voluntary Health Services Hospital",
-      "lat": 13.0005,
-      "lon": 80.2665,
-      "type": "hospital",
-      "subtype": "private",
-      "osm_id": "way/567884",
-      "priority": "medium",
-      "beds": 150,
-      "emergency": true,
-      "trauma_center": false
-    },
-    {
-      "id": 85,
-      "name": "Lifeline Hospital",
-      "lat": 13.085,
-      "lon": 80.2101,
-      "type": "hospital",
-      "subtype": "private",
-      "osm_id": "way/567885",
-      "priority": "medium",
-      "beds": 200,
-      "emergency": true,
-      "trauma_center": false
-    }
+      {
+        "id": 76,
+        "name": "Kanchipuram District Hospital",
+        "lat": 12.8342,
+        "lon": 79.7036,
+        "type": "hospital",
+        "subtype": "government",
+        "osm_id": "way/456780",
+        "priority": "medium",
+        "beds": 400,
+        "emergency": true,
+        "trauma_center": false
+      },
+      {
+        "id": 77,
+        "name": "Tiruvallur Government Hospital",
+        "lat": 13.1439,
+        "lon": 79.9094,
+        "type": "hospital",
+        "subtype": "government",
+        "osm_id": "way/456781",
+        "priority": "medium",
+        "beds": 250,
+        "emergency": true,
+        "trauma_center": false
+      },
+      {
+        "id": 78,
+        "name": "Maraimalai Nagar",
+        "lat": 12.769,
+        "lon": 80.0335,
+        "type": "suburban",
+        "osm_id": "way/456782",
+        "priority": "low"
+      },
+      {
+        "id": 79,
+        "name": "Sriperumbudur Industrial Hub",
+        "lat": 12.9655,
+        "lon": 79.9426,
+        "type": "industrial",
+        "osm_id": "way/456783",
+        "priority": "medium"
+      },
+      {
+        "id": 80,
+        "name": "Oragadam Industrial Area",
+        "lat": 12.9358,
+        "lon": 79.9624,
+        "type": "industrial",
+        "osm_id": "way/456784",
+        "priority": "medium"
+      },
+      {
+        "id": 81,
+        "name": "Cancer Institute Adyar",
+        "lat": 13.0067,
+        "lon": 80.2572,
+        "type": "hospital",
+        "subtype": "private",
+        "osm_id": "way/567881",
+        "priority": "critical",
+        "beds": 250,
+        "emergency": false,
+        "speciality": "oncology"
+      },
+      {
+        "id": 82,
+        "name": "National Institute of Siddha",
+        "lat": 12.9229,
+        "lon": 80.1275,
+        "type": "hospital",
+        "subtype": "government",
+        "osm_id": "way/567882",
+        "priority": "low",
+        "beds": 100,
+        "emergency": false,
+        "speciality": "traditional_medicine"
+      },
+      {
+        "id": 83,
+        "name": "AIIMS Bibinagar (Satellite Center)",
+        "lat": 12.82,
+        "lon": 80.22,
+        "type": "hospital",
+        "subtype": "government",
+        "osm_id": "way/567883",
+        "priority": "critical",
+        "beds": 200,
+        "emergency": true,
+        "trauma_center": false
+      },
+      {
+        "id": 84,
+        "name": "Voluntary Health Services Hospital",
+        "lat": 13.0005,
+        "lon": 80.2665,
+        "type": "hospital",
+        "subtype": "private",
+        "osm_id": "way/567884",
+        "priority": "medium",
+        "beds": 150,
+        "emergency": true,
+        "trauma_center": false
+      },
+      {
+        "id": 85,
+        "name": "Lifeline Hospital",
+        "lat": 13.085,
+        "lon": 80.2101,
+        "type": "hospital",
+        "subtype": "private",
+        "osm_id": "way/567885",
+        "priority": "medium",
+        "beds": 200,
+        "emergency": true,
+        "trauma_center": false
+      },
+    {"id": 86, "name": "SRM Hospital Kattankulathur", "lat": 12.8230, "lon": 80.0444, "type": "hospital", "subtype": "private", "osm_id": "way/678901", "priority": "critical", "beds": 750, "emergency": true, "trauma_center": true},
+    {"id": 87, "name": "Meenakshi Mission Hospital", "lat": 12.9516, "lon": 80.1462, "type": "hospital", "subtype": "private", "osm_id": "way/678902", "priority": "high", "beds": 300, "emergency": true, "trauma_center": false},
+    {"id": 88, "name": "Prashanth Hospital", "lat": 13.0418, "lon": 80.2337, "type": "hospital", "subtype": "private", "osm_id": "way/678903", "priority": "medium", "beds": 180, "emergency": true, "trauma_center": false},
+    {"id": 89, "name": "St. Isabel's Hospital", "lat": 13.0338, "lon": 80.2669, "type": "hospital", "subtype": "private", "osm_id": "way/678904", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
+    {"id": 90, "name": "VS Hospital", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/678905", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+    {"id": 91, "name": "Sundaram Medical Foundation", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/678906", "priority": "medium", "beds": 120, "emergency": true, "trauma_center": false},
+    {"id": 92, "name": "Kauvery Hospital Chennai", "lat": 13.0108, "lon": 80.2205, "type": "hospital", "subtype": "private", "osm_id": "way/678907", "priority": "high", "beds": 350, "emergency": true, "trauma_center": true},
+    {"id": 93, "name": "Gleneagles Global Health City", "lat": 12.8219, "lon": 80.2009, "type": "hospital", "subtype": "private", "osm_id": "way/678908", "priority": "critical", "beds": 2000, "emergency": true, "trauma_center": true},
+    {"id": 94, "name": "Frontier Lifeline Hospital", "lat": 13.0102, "lon": 80.2555, "type": "hospital", "subtype": "private", "osm_id": "way/678909", "priority": "high", "beds": 200, "emergency": false, "speciality": "cardiac"},
+    {"id": 95, "name": "Chennai Meenakshi Multispecialty Hospital", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/678910", "priority": "medium", "beds": 250, "emergency": true, "trauma_center": false},
+    {"id": 96, "name": "Kumaran Hospital", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/678911", "priority": "medium", "beds": 100, "emergency": true, "trauma_center": false},
+    {"id": 97, "name": "Preethi Hospitals", "lat": 12.9795, "lon": 80.2209, "type": "hospital", "subtype": "private", "osm_id": "way/678912", "priority": "medium", "beds": 80, "emergency": true, "trauma_center": false},
+    {"id": 98, "name": "ACS Medical College Hospital", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "private", "osm_id": "way/678913", "priority": "medium", "beds": 400, "emergency": true, "trauma_center": false},
+    {"id": 99, "name": "SIMS Hospital", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/678914", "priority": "high", "beds": 300, "emergency": true, "trauma_center": false},
+    {"id": 100, "name": "Ortho One Orthopaedic Speciality Center", "lat": 13.0418, "lon": 80.2337, "type": "hospital", "subtype": "private", "osm_id": "way/678915", "priority": "medium", "beds": 60, "emergency": false, "speciality": "orthopedics"},
+
+    {"id": 101, "name": "ESI Hospital Guindy", "lat": 13.0108, "lon": 80.2205, "type": "hospital", "subtype": "government", "osm_id": "way/678916", "priority": "medium", "beds": 300, "emergency": true, "trauma_center": false},
+    {"id": 102, "name": "Railway Hospital Perambur", "lat": 13.1167, "lon": 80.2333, "type": "hospital", "subtype": "government", "osm_id": "way/678917", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
+    {"id": 103, "name": "Port Trust Hospital", "lat": 13.1167, "lon": 80.2833, "type": "hospital", "subtype": "government", "osm_id": "way/678918", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+    {"id": 104, "name": "TNHB Hospital Korattur", "lat": 13.1482, "lon": 80.2307, "type": "hospital", "subtype": "government", "osm_id": "way/678919", "priority": "low", "beds": 100, "emergency": true, "trauma_center": false},
+    {"id": 105, "name": "Corporation Hospital Triplicane", "lat": 13.0525, "lon": 80.2608, "type": "hospital", "subtype": "government", "osm_id": "way/678920", "priority": "medium", "beds": 120, "emergency": true, "trauma_center": false},
+    {"id": 106, "name": "Aravind Eye Care System", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/678921", "priority": "medium", "beds": 100, "emergency": false, "speciality": "ophthalmology"},
+    {"id": 107, "name": "Dr. Agarwal's Eye Hospital", "lat": 13.0338, "lon": 80.2669, "type": "hospital", "subtype": "private", "osm_id": "way/678922", "priority": "medium", "beds": 80, "emergency": false, "speciality": "ophthalmology"},
+    {"id": 108, "name": "SIMS Kidney Institute", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/678923", "priority": "high", "beds": 150, "emergency": true, "speciality": "nephrology"},
+    {"id": 109, "name": "Chennai Liver Foundation", "lat": 13.0102, "lon": 80.2555, "type": "hospital", "subtype": "private", "osm_id": "way/678924", "priority": "high", "beds": 100, "emergency": true, "speciality": "hepatology"},
+    {"id": 110, "name": "Madras ENT Research Foundation", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/678925", "priority": "medium", "beds": 80, "emergency": false, "speciality": "ent"},
+
+    {"id": 111, "name": "Apollo Cradle Specialty Hospital", "lat": 13.0645, "lon": 80.2518, "type": "hospital", "subtype": "private", "osm_id": "way/678926", "priority": "high", "beds": 120, "emergency": true, "speciality": "maternity"},
+    {"id": 112, "name": "Cloudnine Hospital T Nagar", "lat": 13.0418, "lon": 80.2337, "type": "hospital", "subtype": "private", "osm_id": "way/678927", "priority": "high", "beds": 100, "emergency": true, "speciality": "maternity"},
+    {"id": 113, "name": "Rainbow Children's Hospital", "lat": 13.0108, "lon": 80.2205, "type": "hospital", "subtype": "private", "osm_id": "way/678928", "priority": "high", "beds": 200, "emergency": true, "speciality": "pediatrics"},
+    {"id": 114, "name": "Kanchi Kamakoti CHILDS Trust Hospital", "lat": 12.9516, "lon": 80.1462, "type": "hospital", "subtype": "private", "osm_id": "way/678929", "priority": "high", "beds": 250, "emergency": true, "speciality": "pediatrics"},
+    {"id": 115, "name": "Institute of Child Health", "lat": 13.0781, "lon": 80.2441, "type": "hospital", "subtype": "government", "osm_id": "way/678930", "priority": "critical", "beds": 300, "emergency": true, "speciality": "pediatrics"},
+
+    {"id": 116, "name": "SCARF India Mental Health Center", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/678931", "priority": "medium", "beds": 80, "emergency": false, "speciality": "psychiatry"},
+    {"id": 117, "name": "Schizophrenia Research Foundation", "lat": 13.0338, "lon": 80.2669, "type": "hospital", "subtype": "private", "osm_id": "way/678932", "priority": "medium", "beds": 60, "emergency": false, "speciality": "psychiatry"},
+    {"id": 118, "name": "TTK Hospital Rehabilitation Center", "lat": 13.0108, "lon": 80.2205, "type": "hospital", "subtype": "private", "osm_id": "way/678933", "priority": "low", "beds": 50, "emergency": false, "speciality": "rehabilitation"},
+
+    
+    {"id": 119, "name": "SRL Diagnostics Main Lab", "lat": 13.0418, "lon": 80.2337, "type": "medical_center", "subtype": "diagnostic", "osm_id": "way/678934", "priority": "low", "beds": 10, "emergency": false, "speciality": "diagnostics"},
+    {"id": 120, "name": "Thyrocare Technologies", "lat": 13.0506, "lon": 80.2121, "type": "medical_center", "subtype": "diagnostic", "osm_id": "way/678935", "priority": "low", "beds": 5, "emergency": false, "speciality": "diagnostics"},
+    {"id": 121, "name": "Dr. Lal PathLabs", "lat": 13.0725, "lon": 80.2530, "type": "medical_center", "subtype": "diagnostic", "osm_id": "way/678936", "priority": "low", "beds": 8, "emergency": false, "speciality": "diagnostics"},
+    {"id": 122, "name": "Metropolis Healthcare", "lat": 13.0338, "lon": 80.2669, "type": "medical_center", "subtype": "diagnostic", "osm_id": "way/678937", "priority": "low", "beds": 6, "emergency": false, "speciality": "diagnostics"},
+
+    {"id": 123, "name": "Urban Primary Health Center Mylapore", "lat": 13.0338, "lon": 80.2669, "type": "clinic", "subtype": "government", "osm_id": "way/678938", "priority": "low", "beds": 20, "emergency": true, "trauma_center": false},
+    {"id": 124, "name": "PHC Kolathur", "lat": 13.1143, "lon": 80.1548, "type": "clinic", "subtype": "government", "osm_id": "way/678939", "priority": "low", "beds": 15, "emergency": true, "trauma_center": false},
+    {"id": 125, "name": "PHC Washermanpet", "lat": 13.1167, "lon": 80.2833, "type": "clinic", "subtype": "government", "osm_id": "way/678940", "priority": "low", "beds": 12, "emergency": true, "trauma_center": false},
+    {"id": 126, "name": "PHC Kodambakkam", "lat": 13.0506, "lon": 80.2121, "type": "clinic", "subtype": "government", "osm_id": "way/678941", "priority": "low", "beds": 18, "emergency": true, "trauma_center": false},
+    {"id": 127, "name": "PHC Saidapet", "lat": 13.0108, "lon": 80.2205, "type": "clinic", "subtype": "government", "osm_id": "way/678942", "priority": "low", "beds": 25, "emergency": true, "trauma_center": false},
+
+    {"id": 128, "name": "Government Ayurveda Hospital", "lat": 13.0781, "lon": 80.2441, "type": "hospital", "subtype": "government", "osm_id": "way/678943", "priority": "low", "beds": 100, "emergency": false, "speciality": "ayurveda"},
+    {"id": 129, "name": "Arya Vaidya Sala", "lat": 13.0418, "lon": 80.2337, "type": "hospital", "subtype": "private", "osm_id": "way/678944", "priority": "low", "beds": 80, "emergency": false, "speciality": "ayurveda"},
+    {"id": 130, "name": "National Institute of Unani Medicine", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/678945", "priority": "low", "beds": 60, "emergency": false, "speciality": "unani"},
+
+    {"id": 131, "name": "Ford Motor Company Medical Center", "lat": 12.8219, "lon": 80.2009, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678946", "priority": "low", "beds": 30, "emergency": true, "trauma_center": false},
+    {"id": 132, "name": "Hyundai Motor India Medical Center", "lat": 12.8230, "lon": 80.0444, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678947", "priority": "low", "beds": 25, "emergency": true, "trauma_center": false},
+    {"id": 133, "name": "TVS Motor Company Clinic", "lat": 12.9516, "lon": 80.1462, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678948", "priority": "low", "beds": 15, "emergency": true, "trauma_center": false},
+    {"id": 134, "name": "Cognizant Health Center", "lat": 12.9010, "lon": 80.2279, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678949", "priority": "low", "beds": 20, "emergency": true, "trauma_center": false},
+    {"id": 135, "name": "TCS Sholinganallur Medical Center", "lat": 12.9010, "lon": 80.2279, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678950", "priority": "low", "beds": 18, "emergency": true, "trauma_center": false},
+
+    {"id": 136, "name": "Geriatric Care Hospital", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/678951", "priority": "low", "beds": 120, "emergency": false, "speciality": "geriatrics"},
+    {"id": 137, "name": "Palliative Care Center", "lat": 13.0338, "lon": 80.2669, "type": "hospital", "subtype": "private", "osm_id": "way/678952", "priority": "low", "beds": 80, "emergency": false, "speciality": "palliative_care"},
+    {"id": 138, "name": "Spinal Cord Injury Center", "lat": 13.0108, "lon": 80.2205, "type": "hospital", "subtype": "private", "osm_id": "way/678953", "priority": "medium", "beds": 60, "emergency": true, "speciality": "spinal_care"},
+
+    {"id": 139, "name": "Ragas Dental College Hospital", "lat": 12.8219, "lon": 80.2009, "type": "hospital", "subtype": "private", "osm_id": "way/678954", "priority": "low", "beds": 50, "emergency": false, "speciality": "dental"},
+    {"id": 140, "name": "Tamil Nadu Government Dental College", "lat": 13.0781, "lon": 80.2441, "type": "hospital", "subtype": "government", "osm_id": "way/678955", "priority": "low", "beds": 80, "emergency": false, "speciality": "dental"},
+    {"id": 141, "name": "Apollo White Dental", "lat": 13.0418, "lon": 80.2337, "type": "clinic", "subtype": "private", "osm_id": "way/678956", "priority": "low", "beds": 10, "emergency": false, "speciality": "dental"},
+    {"id": 142, "name": "Madras Veterinary College Hospital", "lat": 13.0067, "lon": 80.2572, "type": "veterinary", "subtype": "government", "osm_id": "way/678957", "priority": "low", "beds": 40, "emergency": true, "speciality": "veterinary"},
+    {"id": 143, "name": "Blue Cross of India", "lat": 13.0338, "lon": 80.2669, "type": "veterinary", "subtype": "ngo", "osm_id": "way/678958", "priority": "low", "beds": 20, "emergency": true, "speciality": "veterinary"},
+
+    {"id": 144, "name": "Indian Institute of Technology Medical Center", "lat": 12.9941, "lon": 80.1709, "type": "medical_center", "subtype": "academic", "osm_id": "way/678959", "priority": "medium", "beds": 25, "emergency": true, "trauma_center": false},
+    {"id": 145, "name": "Anna University Health Center", "lat": 13.0108, "lon": 80.2205, "type": "medical_center", "subtype": "academic", "osm_id": "way/678960", "priority": "low", "beds": 15, "emergency": true, "trauma_center": false},
+    {"id": 146, "name": "University of Madras Medical Center", "lat": 13.0338, "lon": 80.2669, "type": "medical_center", "subtype": "academic", "osm_id": "way/678961", "priority": "low", "beds": 12, "emergency": true, "trauma_center": false},
+
+    {"id": 147, "name": "Rotary Blood Bank TTK", "lat": 13.0108, "lon": 80.2205, "type": "blood_bank", "subtype": "ngo", "osm_id": "way/678962", "priority": "high", "beds": 5, "emergency": true, "trauma_center": false},
+    {"id": 148, "name": "Jeevan Blood Bank", "lat": 13.0418, "lon": 80.2337, "type": "blood_bank", "subtype": "private", "osm_id": "way/678963", "priority": "high", "beds": 3, "emergency": true, "trauma_center": false},
+    {"id": 149, "name": "Organ Transplant Center", "lat": 13.0645, "lon": 80.2518, "type": "medical_center", "subtype": "transplant", "osm_id": "way/678964", "priority": "critical", "beds": 20, "emergency": true, "trauma_center": false},
+
+    {"id": 150, "name": "Mobile Medical Unit Base Tambaram", "lat": 12.9229, "lon": 80.1275, "type": "mobile_unit", "subtype": "government", "osm_id": "way/678965", "priority": "medium", "beds": 0, "emergency": true, "trauma_center": false},
+    {"id": 151, "name": "Mobile Medical Unit Base Sholinganallur", "lat": 12.9010, "lon": 80.2279, "type": "mobile_unit", "subtype": "government", "osm_id": "way/678966", "priority": "medium", "beds": 0, "emergency": true, "trauma_center": false},
+    {"id": 152, "name": "Disaster Response Medical Center", "lat": 13.0604, "lon": 80.2670, "type": "emergency_center", "subtype": "government", "osm_id": "way/678967", "priority": "critical", "beds": 100, "emergency": true, "trauma_center": true},
+
+    {"id": 153, "name": "Homeopathy Medical College Hospital", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/678968", "priority": "low", "beds": 60, "emergency": false, "speciality": "homeopathy"},
+    {"id": 154, "name": "Yoga and Naturopathy Medical College", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "government", "osm_id": "way/678969", "priority": "low", "beds": 40, "emergency": false, "speciality": "naturopathy"},
+    {"id": 155, "name": "Acupuncture Research Center", "lat": 13.0338, "lon": 80.2669, "type": "medical_center", "subtype": "research", "osm_id": "way/678970", "priority": "low", "beds": 10, "emergency": false, "speciality": "acupuncture"},
+
+    {"id": 156, "name": "Apollo Preventive Health Checkup", "lat": 13.0645, "lon": 80.2518, "type": "wellness_center", "subtype": "private", "osm_id": "way/678971", "priority": "low", "beds": 5, "emergency": false, "speciality": "preventive"},
+    {"id": 157, "name": "Fortis Healthcare Wellness", "lat": 13.0102, "lon": 80.2555, "type": "wellness_center", "subtype": "private", "osm_id": "way/678972", "priority": "low", "beds": 3, "emergency": false, "speciality": "preventive"},
+    {"id": 158, "name": "MIOT Executive Health Checkup", "lat": 13.0105, "lon": 80.1870, "type": "wellness_center", "subtype": "private", "osm_id": "way/678973", "priority": "low", "beds": 8, "emergency": false, "speciality": "preventive"},
+
+    {"id": 159, "name": "Slum Health Center Vyasarpadi", "lat": 13.1033, "lon": 80.2633, "type": "clinic", "subtype": "ngo", "osm_id": "way/678974", "priority": "medium", "beds": 10, "emergency": true, "trauma_center": false},
+    {"id": 160, "name": "Community Health Center Kannagi Nagar", "lat": 12.9422, "lon": 80.2346, "type": "clinic", "subtype": "government", "osm_id": "way/678975", "priority": "medium", "beds": 15, "emergency": true, "trauma_center": false},
+    {"id": 161, "name": "Urban Health Post Semmancheri", "lat": 12.8410, "lon": 80.2279, "type": "clinic", "subtype": "government", "osm_id": "way/678976", "priority": "low", "beds": 8, "emergency": true, "trauma_center": false},
+
+    {"id": 162, "name": "Apollo Hospitals Vanagaram", "lat": 13.1143, "lon": 80.1548, "type": "hospital", "subtype": "private", "osm_id": "way/678977", "priority": "high", "beds": 200, "emergency": true, "trauma_center": false},
+    {"id": 163, "name": "Fortis Hospital OMR", "lat": 12.9010, "lon": 80.2279, "type": "hospital", "subtype": "private", "osm_id": "way/678978", "priority": "high", "beds": 300, "emergency": true, "trauma_center": true},
+    {"id": 164, "name": "SIMS Hospital Vadapalani", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/678979", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+    {"id": 165, "name": "Billroth Hospital Shenoy Nagar", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/678980", "priority": "medium", "beds": 120, "emergency": true, "trauma_center": false},
+
+    {"id": 166, "name": "Cipla Medical Center", "lat": 12.8219, "lon": 80.2009, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678981", "priority": "low", "beds": 10, "emergency": true, "trauma_center": false},
+    {"id": 167, "name": "Dr. Reddy's Health Center", "lat": 12.9010, "lon": 80.2279, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678982", "priority": "low", "beds": 12, "emergency": true, "trauma_center": false},
+    {"id": 168, "name": "Sun Pharmaceutical Medical Unit", "lat": 12.9516, "lon": 80.1462, "type": "medical_center", "subtype": "corporate", "osm_id": "way/678983", "priority": "low", "beds": 8, "emergency": true, "trauma_center": false},
+
+    {"id": 169, "name": "Tamil Nadu Sports Medicine Center", "lat": 13.0067, "lon": 80.2572, "type": "medical_center", "subtype": "government", "osm_id": "way/678984", "priority": "medium", "beds": 30, "emergency": true, "speciality": "sports_medicine"},
+    {"id": 170, "name": "Orthosports Chennai", "lat": 13.0418, "lon": 80.2337, "type": "clinic", "subtype": "private", "osm_id": "way/678985", "priority": "medium", "beds": 15, "emergency": false, "speciality": "sports_medicine"},
+    {"id": 171, "name": "Physiocare Rehabilitation Center", "lat": 13.0108, "lon": 80.2205, "type": "clinic", "subtype": "private", "osm_id": "way/678986", "priority": "low", "beds": 20, "emergency": false, "speciality": "physiotherapy"},
+
+    {"id": 172, "name": "Dialysis Center Anna Nagar", "lat": 13.0850, "lon": 80.2101, "type": "medical_center", "subtype": "private", "osm_id": "way/678987", "priority": "high", "beds": 25, "emergency": true, "speciality": "dialysis"},
+    {"id": 173, "name": "Chemotherapy Day Care Center", "lat": 13.0067, "lon": 80.2572, "type": "medical_center", "subtype": "private", "osm_id": "way/678988", "priority": "high", "beds": 15, "emergency": false, "speciality": "oncology"},
+    {"id": 174, "name": "Sleep Disorder Clinic", "lat": 13.0338, "lon": 80.2669, "type": "clinic", "subtype": "private", "osm_id": "way/678989", "priority": "low", "beds": 10, "emergency": false, "speciality": "sleep_medicine"},
+    {"id": 175, "name": "Wound Care Center", "lat": 13.0506, "lon": 80.2121, "type": "clinic", "subtype": "private", "osm_id": "way/678990", "priority": "medium", "beds": 8, "emergency": true, "speciality": "wound_care"},
+
+    {"id": 176, "name": "Trauma Response Unit Velachery", "lat": 12.9795, "lon": 80.2209, "type": "emergency_center", "subtype": "government", "osm_id": "way/678991", "priority": "critical", "beds": 20, "emergency": true, "trauma_center": true},
+    {"id": 177, "name": "Emergency Response Center OMR", "lat": 12.9010, "lon": 80.2279, "type": "emergency_center", "subtype": "government", "osm_id": "way/678992", "priority": "critical", "beds": 15, "emergency": true, "trauma_center": true},
+    {"id": 178, "name": "Critical Care Transport Hub", "lat": 13.0604, "lon": 80.2670, "type": "emergency_center", "subtype": "government", "osm_id": "way/678993", "priority": "critical", "beds": 10, "emergency": true, "trauma_center": true},
+    {"id": 179, "name": "International Medical Tourism Center", "lat": 13.0645, "lon": 80.2518, "type": "hospital", "subtype": "private", "osm_id": "way/678994", "priority": "high", "beds": 100, "emergency": true, "trauma_center": false},
+    {"id": 180, "name": "Robotic Surgery Center", "lat": 13.0102, "lon": 80.2555, "type": "medical_center", "subtype": "private", "osm_id": "way/678995", "priority": "high", "beds": 25, "emergency": false, "speciality": "robotic_surgery"},
+    {"id": 181, "name": "Gamma Knife Radiosurgery Center", "lat": 13.0105, "lon": 80.1870, "type": "medical_center", "subtype": "private", "osm_id": "way/678996", "priority": "high", "beds": 8, "emergency": false, "speciality": "radiosurgery"},
+
+
+    {"id": 182, "name": "Tibetan Medicine Center", "lat": 13.0067, "lon": 80.2572, "type": "clinic", "subtype": "private", "osm_id": "way/678997", "priority": "low", "beds": 12, "emergency": false, "speciality": "tibetan_medicine"},
+    {"id": 183, "name": "Chinese Traditional Medicine Clinic", "lat": 13.0338, "lon": 80.2669, "type": "clinic", "subtype": "private", "osm_id": "way/678998", "priority": "low", "beds": 10, "emergency": false, "speciality": "chinese_medicine"},
+    {"id": 184, "name": "Islamic Medicine Research Center", "lat": 12.9229, "lon": 80.1275, "type": "medical_center", "subtype": "research", "osm_id": "way/678999", "priority": "low", "beds": 15, "emergency": false, "speciality": "islamic_medicine"},
+    {"id": 185, "name": "Varma Kalai Treatment Center", "lat": 13.0418, "lon": 80.2337, "type": "clinic", "subtype": "traditional", "osm_id": "way/679000", "priority": "low", "beds": 8, "emergency": false, "speciality": "varma_kalai"},
+
+    {"id": 186, "name": "GST Road Toll Plaza Vandalur", "lat": 12.8920, "lon": 80.1243, "type": "toll_plaza", "subtype": "highway", "osm_id": "way/789001", "priority": "high"},
+    {"id": 187, "name": "OMR Toll Plaza Siruseri", "lat": 12.8219, "lon": 80.2009, "type": "toll_plaza", "subtype": "highway", "osm_id": "way/789002", "priority": "high"},
+    {"id": 188, "name": "ECR Toll Plaza Mahabalipuram", "lat": 12.6186, "lon": 80.1924, "type": "toll_plaza", "subtype": "highway", "osm_id": "way/789003", "priority": "medium"},
+    {"id": 189, "name": "Chennai Bypass Road Junction", "lat": 13.1500, "lon": 80.2000, "type": "highway_junction", "subtype": "bypass", "osm_id": "way/789004", "priority": "high"},
+    {"id": 190, "name": "NH 5 Chennai Entry Point", "lat": 13.2000, "lon": 80.1000, "type": "highway_junction", "subtype": "entry_point", "osm_id": "way/789005", "priority": "high"},
+
+    {"id": 191, "name": "Chennai Central Metro Station", "lat": 13.0827, "lon": 80.2707, "type": "metro_station", "subtype": "interchange", "osm_id": "way/789006", "priority": "critical"},
+    {"id": 192, "name": "Egmore Metro Station", "lat": 13.0733, "lon": 80.2609, "type": "metro_station", "subtype": "major", "osm_id": "way/789007", "priority": "high"},
+    {"id": 193, "name": "Anna Salai Metro Station", "lat": 13.0604, "lon": 80.2670, "type": "metro_station", "subtype": "major", "osm_id": "way/789008", "priority": "high"},
+    {"id": 194, "name": "Koyambedu Metro Station", "lat": 13.0698, "lon": 80.1944, "type": "metro_station", "subtype": "interchange", "osm_id": "way/789009", "priority": "high"},
+    {"id": 195, "name": "Airport Metro Station", "lat": 12.9941, "lon": 80.1709, "type": "metro_station", "subtype": "terminal", "osm_id": "way/789010", "priority": "critical"},
+    {"id": 196, "name": "Guindy Metro Station", "lat": 13.0108, "lon": 80.2205, "type": "metro_station", "subtype": "major", "osm_id": "way/789011", "priority": "high"},
+    {"id": 197, "name": "Adyar Metro Station", "lat": 13.0067, "lon": 80.2572, "type": "metro_station", "subtype": "major", "osm_id": "way/789012", "priority": "high"},
+    {"id": 198, "name": "Thirumangalam Metro Station", "lat": 13.0900, "lon": 80.1820, "type": "metro_station", "subtype": "major", "osm_id": "way/789013", "priority": "medium"},
+    {"id": 199, "name": "Alandur Metro Station", "lat": 12.9950, "lon": 80.2050, "type": "metro_station", "subtype": "interchange", "osm_id": "way/789014", "priority": "high"},
+    {"id": 200, "name": "St. Thomas Mount Metro Station", "lat": 12.9950, "lon": 80.1650, "type": "metro_station", "subtype": "major", "osm_id": "way/789015", "priority": "medium"},
+
+    {"id": 201, "name": "Kilambakkam Bus Terminal", "lat": 12.8441, "lon": 80.1943, "type": "bus_terminal", "subtype": "interstate", "osm_id": "way/789016", "priority": "high"},
+    {"id": 202, "name": "Madhavaram Bus Depot", "lat": 13.1482, "lon": 80.2307, "type": "bus_depot", "subtype": "city", "osm_id": "way/789017", "priority": "medium"},
+    {"id": 203, "name": "Tambaram Bus Stand", "lat": 12.9229, "lon": 80.1275, "type": "bus_terminal", "subtype": "suburban", "osm_id": "way/789018", "priority": "medium"},
+    {"id": 204, "name": "Velachery Bus Depot", "lat": 12.9795, "lon": 80.2209, "type": "bus_depot", "subtype": "city", "osm_id": "way/789019", "priority": "medium"},
+    {"id": 205, "name": "Anna Nagar Bus Depot", "lat": 13.0850, "lon": 80.2101, "type": "bus_depot", "subtype": "city", "osm_id": "way/789020", "priority": "medium"},
+
+    {"id": 206, "name": "Tambaram Railway Station", "lat": 12.9229, "lon": 80.1275, "type": "railway_station", "subtype": "suburban", "osm_id": "way/789021", "priority": "high"},
+    {"id": 207, "name": "Chromepet Railway Station", "lat": 12.9516, "lon": 80.1462, "type": "railway_station", "subtype": "suburban", "osm_id": "way/789022", "priority": "medium"},
+    {"id": 208, "name": "St. Thomas Mount Railway Station", "lat": 12.9950, "lon": 80.1650, "type": "railway_station", "subtype": "suburban", "osm_id": "way/789023", "priority": "medium"},
+    {"id": 209, "name": "Guindy Railway Station", "lat": 13.0108, "lon": 80.2205, "type": "railway_station", "subtype": "suburban", "osm_id": "way/789024", "priority": "medium"},
+    {"id": 210, "name": "Mambalam Railway Station", "lat": 13.0338, "lon": 80.2335, "type": "railway_station", "subtype": "suburban", "osm_id": "way/789025", "priority": "medium"},
+
+    {"id": 211, "name": "Gemini Flyover Signal", "lat": 13.0604, "lon": 80.2670, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789026", "priority": "high"},
+    {"id": 212, "name": "Kathipara Junction", "lat": 13.0050, "lon": 80.1750, "type": "traffic_signal", "subtype": "cloverleaf", "osm_id": "way/789027", "priority": "critical"},
+    {"id": 213, "name": "Guindy Race Course Signal", "lat": 13.0108, "lon": 80.2205, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789028", "priority": "high"},
+    {"id": 214, "name": "Saidapet Signal", "lat": 13.0210, "lon": 80.2240, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789029", "priority": "high"},
+    {"id": 215, "name": "Nandanam Signal", "lat": 13.0320, "lon": 80.2410, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789030", "priority": "high"},
+    {"id": 216, "name": "Thousand Lights Signal", "lat": 13.0594, "lon": 80.2407, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789031", "priority": "high"},
+    {"id": 217, "name": "Anna Salai-Khader Nawaz Khan Road Junction", "lat": 13.0550, "lon": 80.2550, "type": "traffic_signal", "subtype": "major_junction", "osm_id": "way/789032", "priority": "high"},
+    {"id": 218, "name": "Spencer Plaza Signal", "lat": 13.0594, "lon": 80.2690, "type": "traffic_signal", "subtype": "commercial_junction", "osm_id": "way/789033", "priority": "high"},
+
+    {"id": 219, "name": "Anna Flyover Entry", "lat": 13.0604, "lon": 80.2670, "type": "flyover", "subtype": "entry_point", "osm_id": "way/789034", "priority": "high"},
+    {"id": 220, "name": "Anna Flyover Exit Marina", "lat": 13.0500, "lon": 80.2800, "type": "flyover", "subtype": "exit_point", "osm_id": "way/789035", "priority": "high"},
+    {"id": 221, "name": "Madley Flyover", "lat": 13.0900, "lon": 80.2200, "type": "flyover", "subtype": "arterial", "osm_id": "way/789036", "priority": "medium"},
+    {"id": 222, "name": "Vadapalani Flyover", "lat": 13.0506, "lon": 80.2121, "type": "flyover", "subtype": "arterial", "osm_id": "way/789037", "priority": "medium"},
+    {"id": 223, "name": "Porur Flyover", "lat": 13.0378, "lon": 80.1563, "type": "flyover", "subtype": "highway", "osm_id": "way/789038", "priority": "medium"},
+
+    {"id": 224, "name": "Adyar River Bridge Anna Salai", "lat": 13.0067, "lon": 80.2572, "type": "bridge", "subtype": "river_crossing", "osm_id": "way/789039", "priority": "critical"},
+    {"id": 225, "name": "Cooum River Bridge Egmore", "lat": 13.0733, "lon": 80.2609, "type": "bridge", "subtype": "river_crossing", "osm_id": "way/789040", "priority": "high"},
+    {"id": 226, "name": "Buckingham Canal Bridge OMR", "lat": 12.9860, "lon": 80.2593, "type": "bridge", "subtype": "canal_crossing", "osm_id": "way/789041", "priority": "high"},
+    {"id": 227, "name": "Pallikaranai Marsh Bridge", "lat": 12.9200, "lon": 80.1919, "type": "bridge", "subtype": "wetland_crossing", "osm_id": "way/789042", "priority": "medium"},
+    {"id": 228, "name": "Ambattur Industrial Estate Gate 1", "lat": 13.1143, "lon": 80.1548, "type": "industrial_gate", "subtype": "main_entry", "osm_id": "way/789043", "priority": "medium"},
+    {"id": 229, "name": "Guindy Industrial Estate Gate", "lat": 13.0108, "lon": 80.2205, "type": "industrial_gate", "subtype": "main_entry", "osm_id": "way/789044", "priority": "medium"},
+    {"id": 230, "name": "SIPCOT Irungattukottai Entry", "lat": 12.7690, "lon": 80.0335, "type": "industrial_gate", "subtype": "township_entry", "osm_id": "way/789045", "priority": "low"},
+    {"id": 231, "name": "Maraimalai Nagar Industrial Gate", "lat": 12.7690, "lon": 80.0335, "type": "industrial_gate", "subtype": "manufacturing", "osm_id": "way/789046", "priority": "low"},
+
+    {"id": 232, "name": "Tidel Park Main Gate", "lat": 13.0067, "lon": 80.2572, "type": "it_park_gate", "subtype": "major", "osm_id": "way/789047", "priority": "high"},
+    {"id": 233, "name": "DLF IT Park Entrance", "lat": 12.9010, "lon": 80.2279, "type": "it_park_gate", "subtype": "major", "osm_id": "way/789048", "priority": "high"},
+    {"id": 234, "name": "Ascendas IT Park Gate", "lat": 12.9010, "lon": 80.2279, "type": "it_park_gate", "subtype": "major", "osm_id": "way/789049", "priority": "medium"},
+    {"id": 235, "name": "ELCOT IT Park Entrance", "lat": 12.9010, "lon": 80.2279, "type": "it_park_gate", "subtype": "government", "osm_id": "way/789050", "priority": "medium"},
+    {"id": 236, "name": "Olympia Tech Park Gate", "lat": 12.8219, "lon": 80.2009, "type": "it_park_gate", "subtype": "major", "osm_id": "way/789051", "priority": "medium"},
+
+    {"id": 237, "name": "Chennai Port Main Gate", "lat": 13.1167, "lon": 80.2833, "type": "port_gate", "subtype": "cargo", "osm_id": "way/789052", "priority": "medium"},
+    {"id": 238, "name": "Ennore Port Entrance", "lat": 13.2167, "lon": 80.3333, "type": "port_gate", "subtype": "thermal", "osm_id": "way/789053", "priority": "low"},
+    {"id": 239, "name": "Fishing Harbor Kasimedu", "lat": 13.1295, "lon": 80.2923, "type": "harbor", "subtype": "fishing", "osm_id": "way/789054", "priority": "low"},
+    {"id": 240, "name": "Marina Beach Boat Club", "lat": 13.0500, "lon": 80.2824, "type": "harbor", "subtype": "recreational", "osm_id": "way/789055", "priority": "low"},
+
+
+    {"id": 241, "name": "IIT Madras Main Gate", "lat": 12.9941, "lon": 80.1709, "type": "institution_gate", "subtype": "academic", "osm_id": "way/789056", "priority": "medium"},
+    {"id": 242, "name": "Anna University Main Gate", "lat": 13.0108, "lon": 80.2205, "type": "institution_gate", "subtype": "academic", "osm_id": "way/789057", "priority": "medium"},
+    {"id": 243, "name": "University of Madras Marina Campus", "lat": 13.0338, "lon": 80.2669, "type": "institution_gate", "subtype": "academic", "osm_id": "way/789058", "priority": "medium"},
+    {"id": 244, "name": "Loyola College Gate", "lat": 13.0338, "lon": 80.2469, "type": "institution_gate", "subtype": "academic", "osm_id": "way/789059", "priority": "low"},
+    {"id": 245, "name": "Stella Maris College Gate", "lat": 13.0338, "lon": 80.2669, "type": "institution_gate", "subtype": "academic", "osm_id": "way/789060", "priority": "low"},
+    {"id": 246, "name": "Express Avenue Mall Main Entrance", "lat": 13.0525, "lon": 80.2608, "type": "mall_entrance", "subtype": "major", "osm_id": "way/789061", "priority": "high"},
+    {"id": 247, "name": "Phoenix MarketCity Entrance", "lat": 12.9795, "lon": 80.2209, "type": "mall_entrance", "subtype": "major", "osm_id": "way/789062", "priority": "high"},
+    {"id": 248, "name": "Forum Vijaya Mall Gate", "lat": 13.0506, "lon": 80.2121, "type": "mall_entrance", "subtype": "major", "osm_id": "way/789063", "priority": "medium"},
+    {"id": 249, "name": "T Nagar Commercial Complex", "lat": 13.0418, "lon": 80.2337, "type": "commercial_complex", "subtype": "traditional", "osm_id": "way/789064", "priority": "high"},
+    {"id": 250, "name": "Pondy Bazaar Junction", "lat": 13.0418, "lon": 80.2337, "type": "market_junction", "subtype": "traditional", "osm_id": "way/789065", "priority": "high"},
+    {"id": 251, "name": "Apollo Hospital Emergency Gate", "lat": 13.0645, "lon": 80.2518, "type": "hospital_gate", "subtype": "emergency", "osm_id": "way/789066", "priority": "critical"},
+    {"id": 252, "name": "MIOT Hospital Emergency Entrance", "lat": 13.0105, "lon": 80.1870, "type": "hospital_gate", "subtype": "emergency", "osm_id": "way/789067", "priority": "critical"},
+    {"id": 253, "name": "Fortis Hospital Ambulance Bay", "lat": 13.0102, "lon": 80.2555, "type": "hospital_gate", "subtype": "emergency", "osm_id": "way/789068", "priority": "critical"},
+    {"id": 254, "name": "Government General Hospital Emergency", "lat": 13.0800, "lon": 80.2780, "type": "hospital_gate", "subtype": "emergency", "osm_id": "way/789069", "priority": "critical"},
+
+    {"id": 255, "name": "DLF New Town Heights Gate", "lat": 12.9010, "lon": 80.2279, "type": "residential_gate", "subtype": "gated_community", "osm_id": "way/789070", "priority": "low"},
+    {"id": 256, "name": "Prestige Shantiniketan Gate", "lat": 13.1143, "lon": 80.1548, "type": "residential_gate", "subtype": "gated_community", "osm_id": "way/789071", "priority": "low"},
+    {"id": 257, "name": "Brigade Millennium Gate", "lat": 12.9010, "lon": 80.2279, "type": "residential_gate", "subtype": "gated_community", "osm_id": "way/789072", "priority": "low"},
+    {"id": 258, "name": "VGN Fairmont Gate", "lat": 12.9200, "lon": 80.1919, "type": "residential_gate", "subtype": "gated_community", "osm_id": "way/789073", "priority": "low"},
+    {"id": 259, "name": "Fire Station Kilpauk", "lat": 13.0781, "lon": 80.2441, "type": "fire_station", "subtype": "zonal", "osm_id": "way/789074", "priority": "critical"},
+    {"id": 260, "name": "Fire Station Adyar", "lat": 13.0067, "lon": 80.2572, "type": "fire_station", "subtype": "zonal", "osm_id": "way/789075", "priority": "critical"},
+    {"id": 261, "name": "Fire Station Tambaram", "lat": 12.9229, "lon": 80.1275, "type": "fire_station", "subtype": "suburban", "osm_id": "way/789076", "priority": "high"},
+    {"id": 262, "name": "Fire Station Anna Nagar", "lat": 13.0850, "lon": 80.2101, "type": "fire_station", "subtype": "zonal", "osm_id": "way/789077", "priority": "high"},
+    {"id": 263, "name": "Fire Station Sholinganallur", "lat": 12.9010, "lon": 80.2279, "type": "fire_station", "subtype": "industrial", "osm_id": "way/789078", "priority": "high"},
+
+    {"id": 264, "name": "Police Control Room Egmore", "lat": 13.0733, "lon": 80.2609, "type": "police_station", "subtype": "control_room", "osm_id": "way/789079", "priority": "critical"},
+    {"id": 265, "name": "Traffic Police Headquarters", "lat": 13.0604, "lon": 80.2670, "type": "police_station", "subtype": "traffic", "osm_id": "way/789080", "priority": "high"},
+    {"id": 266, "name": "Police Station T Nagar", "lat": 13.0418, "lon": 80.2337, "type": "police_station", "subtype": "local", "osm_id": "way/789081", "priority": "medium"},
+    {"id": 267, "name": "Police Station Guindy", "lat": 13.0108, "lon": 80.2205, "type": "police_station", "subtype": "local", "osm_id": "way/789082", "priority": "medium"},
+    {"id": 268, "name": "Police Station Velachery", "lat": 12.9795, "lon": 80.2209, "type": "police_station", "subtype": "local", "osm_id": "way/789083", "priority": "medium"},
+    {"id": 269, "name": "Indian Oil Petrol Pump Anna Salai", "lat": 13.0604, "lon": 80.2670, "type": "petrol_pump", "subtype": "highway", "osm_id": "way/789084", "priority": "medium"},
+    {"id": 270, "name": "HP Petrol Pump OMR", "lat": 12.9860, "lon": 80.2593, "type": "petrol_pump", "subtype": "highway", "osm_id": "way/789085", "priority": "medium"},
+    {"id": 271, "name": "BPCL Petrol Pump GST Road", "lat": 13.0108, "lon": 80.2205, "type": "petrol_pump", "subtype": "highway", "osm_id": "way/789086", "priority": "medium"},
+    {"id": 272, "name": "Shell Petrol Station ECR", "lat": 12.9860, "lon": 80.2593, "type": "petrol_pump", "subtype": "coastal", "osm_id": "way/789087", "priority": "low"},
+
+    {"id": 273, "name": "Multi-Level Car Park Anna Salai", "lat": 13.0604, "lon": 80.2670, "type": "parking", "subtype": "commercial", "osm_id": "way/789088", "priority": "medium"},
+    {"id": 274, "name": "Beach Road Parking", "lat": 13.0500, "lon": 80.2824, "type": "parking", "subtype": "recreational", "osm_id": "way/789089", "priority": "low"},
+    {"id": 275, "name": "Airport Parking Terminal", "lat": 12.9941, "lon": 80.1709, "type": "parking", "subtype": "airport", "osm_id": "way/789090", "priority": "high"},
+
+    {"id": 276, "name": "Highway Rest Stop GST Road", "lat": 12.8920, "lon": 80.1243, "type": "rest_area", "subtype": "highway", "osm_id": "way/789091", "priority": "low"},
+    {"id": 277, "name": "OMR Service Area Sholinganallur", "lat": 12.9010, "lon": 80.2279, "type": "rest_area", "subtype": "highway", "osm_id": "way/789092", "priority": "low"},
+    {"id": 278, "name": "ECR Rest Point Covelong", "lat": 12.7886, "lon": 80.2519, "type": "rest_area", "subtype": "coastal", "osm_id": "way/789093", "priority": "low"},
+
+
+    {"id": 279, "name": "Kapaleeshwarar Temple Gate", "lat": 13.0338, "lon": 80.2669, "type": "temple_gate", "subtype": "major", "osm_id": "way/789094", "priority": "medium"},
+    {"id": 280, "name": "San Thome Basilica Entrance", "lat": 13.0338, "lon": 80.2769, "type": "church_gate", "subtype": "major", "osm_id": "way/789095", "priority": "medium"},
+    {"id": 281, "name": "Thousand Lights Mosque Gate", "lat": 13.0594, "lon": 80.2407, "type": "mosque_gate", "subtype": "major", "osm_id": "way/789096", "priority": "medium"},
+    {"id": 282, "name": "Parthasarathy Temple Entrance", "lat": 13.0525, "lon": 80.2608, "type": "temple_gate", "subtype": "historic", "osm_id": "way/789097", "priority": "low"},
+
+    {"id": 283, "name": "Kilpauk Water Treatment Plant", "lat": 13.0781, "lon": 80.2441, "type": "utility", "subtype": "water_treatment", "osm_id": "way/789098", "priority": "critical"},
+    {"id": 284, "name": "Kodungaiyur Water Treatment Plant", "lat": 13.1482, "lon": 80.2907, "type": "utility", "subtype": "water_treatment", "osm_id": "way/789099", "priority": "critical"},
+    {"id": 285, "name": "Chennai Metropolitan Water Board", "lat": 13.0604, "lon": 80.2670, "type": "utility", "subtype": "water_authority", "osm_id": "way/789100", "priority": "high"}
   ],
   "edges": [
     {
@@ -1942,7 +2183,1039 @@
       "road_type": "local",
       "speed_limit": 40,
       "lanes": 2
-    }
+    },
+    {
+    "from": 86,
+    "to": 29,
+    "distance": 1.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+  {
+    "from": 87,
+    "to": 14,
+    "distance": 2.1,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+  {
+    "from": 88,
+    "to": 7,
+    "distance": 0.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 89,
+    "to": 16,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 90,
+    "to": 17,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 91,
+    "to": 9,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 92,
+    "to": 8,
+    "distance": 1.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 93,
+    "to": 26,
+    "distance": 2.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 94,
+    "to": 9,
+    "distance": 0.6,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 95,
+    "to": 18,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 191,
+    "to": 1,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 192,
+    "to": 2,
+    "distance": 0.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 193,
+    "to": 5,
+    "distance": 0.1,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 194,
+    "to": 4,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 195,
+    "to": 3,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 201,
+    "to": 28,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 202,
+    "to": 35,
+    "distance": 0.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 203,
+    "to": 12,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 211,
+    "to": 5,
+    "distance": 0.1,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 40,
+    "lanes": 6
+  },
+  {
+    "from": 212,
+    "to": 3,
+    "distance": 2.5,
+    "traffic_delay": 3,
+    "blocked": false,
+    "road_type": "highway",
+    "speed_limit": 60,
+    "lanes": 8
+  },
+  {
+    "from": 213,
+    "to": 8,
+    "distance": 0.2,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+
+  {
+    "from": 259,
+    "to": 43,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+  {
+    "from": 260,
+    "to": 81,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+  {
+    "from": 261,
+    "to": 57,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+  {
+    "from": 262,
+    "to": 55,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 40,
+    "lanes": 2
+  },
+
+  {
+    "from": 232,
+    "to": 81,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 233,
+    "to": 26,
+    "distance": 0.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 234,
+    "to": 27,
+    "distance": 0.6,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 235,
+    "to": 26,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 237,
+    "to": 24,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "port_road",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 238,
+    "to": 22,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "port_road",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+
+  {
+    "from": 241,
+    "to": 3,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "campus_road",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 242,
+    "to": 8,
+    "distance": 0.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "campus_road",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 243,
+    "to": 16,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "campus_road",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+
+  {
+    "from": 246,
+    "to": 40,
+    "distance": 0.2,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 4
+  },
+  {
+    "from": 247,
+    "to": 10,
+    "distance": 0.3,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 4
+  },
+  {
+    "from": 248,
+    "to": 20,
+    "distance": 0.2,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 4
+  },
+  
+  {
+    "from": 96,
+    "to": 20,
+    "distance": 0.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 97,
+    "to": 10,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 98,
+    "to": 14,
+    "distance": 1.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 99,
+    "to": 20,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 100,
+    "to": 7,
+    "distance": 0.6,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 101,
+    "to": 8,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 102,
+    "to": 25,
+    "distance": 1.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 103,
+    "to": 24,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 104,
+    "to": 35,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 105,
+    "to": 40,
+    "distance": 0.6,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 106,
+    "to": 9,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 107,
+    "to": 16,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 108,
+    "to": 20,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 109,
+    "to": 47,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 110,
+    "to": 17,
+    "distance": 0.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 111,
+    "to": 46,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 112,
+    "to": 7,
+    "distance": 0.3,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 113,
+    "to": 8,
+    "distance": 0.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 114,
+    "to": 14,
+    "distance": 1.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 115,
+    "to": 19,
+    "distance": 0.6,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+
+  {
+    "from": 116,
+    "to": 9,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 117,
+    "to": 16,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 118,
+    "to": 8,
+    "distance": 0.6,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "emergency",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 119,
+    "to": 7,
+    "distance": 0.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 120,
+    "to": 20,
+    "distance": 0.3,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 121,
+    "to": 17,
+    "distance": 0.4,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 122,
+    "to": 16,
+    "distance": 0.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "commercial",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  
+  {
+    "from": 123,
+    "to": 16,
+    "distance": 0.1,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 124,
+    "to": 34,
+    "distance": 1.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 125,
+    "to": 24,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 126,
+    "to": 20,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 127,
+    "to": 8,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 128,
+    "to": 19,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 129,
+    "to": 7,
+    "distance": 0.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 130,
+    "to": 14,
+    "distance": 1.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "local",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 131,
+    "to": 29,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "industrial",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 132,
+    "to": 86,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "industrial",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 133,
+    "to": 14,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "industrial",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 134,
+    "to": 26,
+    "distance": 0.6,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 135,
+    "to": 26,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 72,
+    "to": 18,
+    "distance": 0.3,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "ring_road",
+    "speed_limit": 60,
+    "lanes": 6
+  },
+  {
+    "from": 73,
+    "to": 72,
+    "distance": 8.2,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "ring_road",
+    "speed_limit": 60,
+    "lanes": 6
+  },
+  {
+    "from": 74,
+    "to": 11,
+    "distance": 3.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "expressway",
+    "speed_limit": 100,
+    "lanes": 8
+  },
+  
+  {
+    "from": 196,
+    "to": 71,
+    "distance": 0.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 197,
+    "to": 9,
+    "distance": 0.1,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 198,
+    "to": 18,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 199,
+    "to": 3,
+    "distance": 1.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 30,
+    "lanes": 4
+  },
+  {
+    "from": 200,
+    "to": 15,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "metro_access",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+
+  {
+    "from": 206,
+    "to": 12,
+    "distance": 0.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "station_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 207,
+    "to": 14,
+    "distance": 0.1,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "station_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 208,
+    "to": 15,
+    "distance": 0.3,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "station_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 209,
+    "to": 8,
+    "distance": 0.1,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "station_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+  {
+    "from": 210,
+    "to": 7,
+    "distance": 0.4,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "station_access",
+    "speed_limit": 20,
+    "lanes": 2
+  },
+
+  {
+    "from": 224,
+    "to": 5,
+    "distance": 0.1,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "bridge",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 225,
+    "to": 2,
+    "distance": 0.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "bridge",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 226,
+    "to": 11,
+    "distance": 0.3,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "bridge",
+    "speed_limit": 50,
+    "lanes": 4
+  },
+
+  {
+    "from": 283,
+    "to": 19,
+    "distance": 0.5,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "utility_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 284,
+    "to": 35,
+    "distance": 1.2,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "utility_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  {
+    "from": 285,
+    "to": 5,
+    "distance": 0.8,
+    "traffic_delay": 0,
+    "blocked": false,
+    "road_type": "utility_road",
+    "speed_limit": 30,
+    "lanes": 2
+  },
+  
+  {
+    "from": 3,
+    "to": 26,
+    "distance": 12.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "highway",
+    "speed_limit": 80,
+    "lanes": 6
+  },
+  {
+    "from": 11,
+    "to": 93,
+    "distance": 4.2,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "it_corridor",
+    "speed_limit": 60,
+    "lanes": 4
+  },
+  {
+    "from": 26,
+    "to": 163,
+    "distance": 1.5,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "it_park_road",
+    "speed_limit": 40,
+    "lanes": 4
+  },
+  {
+    "from": 4,
+    "to": 202,
+    "distance": 2.8,
+    "traffic_delay": 1,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 50,
+    "lanes": 4
+  },
+  {
+    "from": 18,
+    "to": 162,
+    "distance": 6.5,
+    "traffic_delay": 2,
+    "blocked": false,
+    "road_type": "arterial",
+    "speed_limit": 50,
+    "lanes": 4
+  }
   ],
   "traffic_patterns": {
     "peak_morning": {

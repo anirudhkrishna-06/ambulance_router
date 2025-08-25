@@ -1,17 +1,54 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Ambulance Routing - Test</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <style>
-        #map { height: 80vh; width: 100%; }
-        body { margin:0; padding:0; }
-        .controls { padding: 10px; }
-        .info-panel { padding: 10px; background: #f0f0f0; }
-    </style>
+    <link rel="stylesheet" href=".././static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
+    <div>
+        <header>
+            <div>
+                <i class="fas fa-ambulance"></i>
+                Chennai Ambulance Emergency Router
+            </div>
+        </header>
+        <main>
+            <aside>
+                <div>
+                    <h2><i class="fas fa-route"></i> Route Finder</h2>
+                    <label for="startNodeSearch">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Emergency Location
+                    </label>
+                    <div class="search-container">
+                        <input type="text" id="startNodeSearch" placeholder="Search location or click on map...">
+                        <div id="suggestions" class="suggestions"></div>
+                    </div>
+
+                    <button id="findRouteBtn">
+                        <i class="fas fa-hospital"></i> Find Nearest Hospital
+                    </button>
+                </div>
+                <div>
+                    <div id="map"></div>
+                    <div id="infoPanel" class="info-panel">
+                        <div>
+                            <i class="fas fa-hospital"></i>
+                            <span id="hospitalName">Route Information</span>
+                        </div>
+                        <div>
+                            <span id="distanceValue">0</span> km |
+                            <span id="etaValue">0</span> mins
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
 
 <div class="controls">
     <label for="startNode">Start Node ID:</label>
@@ -35,7 +72,35 @@
     let routeLayer = null;
     let startMarker = null;
     let hospitalMarker = null;
+    let allNode = [];
+    let selectedStartNodeId = null;
 
+    const hospitalIcon = L.divIcon({
+        html: '<i class="fas fa-hospital" style="color:#dc2626; font-size:18px;"></i>',
+        iconSize: [20, 20], className: 'custom-div-icon'
+    });
+    const locationIcon = L.divIcon({
+        html: '<i class="fas fa-map-marker-alt" style="color:#3b82f6; font-size:16px;"></i>',
+        iconSize: [20, 20], className: 'custom-div-icon'
+    });
+    const emergencyIcon = L.divIcon({
+        html: '<i class="fas fa-ambulance" style="color:#ef4444; font-size:20px;"></i>',
+        iconSize: [25, 25], className: 'custom-div-icon'
+    });
+
+    axios.get('/api/get_map_data')
+        .then(res => {
+            allNodes = res.data.nodes;
+            allNodes.forEach(node => {
+                const icon = node.type == 'hospital' ? hospitalIcon : locationIcon;
+                L.marker([node.lat, node.lon], { icon }).addTo(map).bindPopup(`<h6>${node.name}</h6>`);
+            })  
+        })
+        .catch(err => {
+            console.error(err);
+        });
+
+        
     document.getElementById('findRouteBtn').addEventListener('click', async () => {
         const startNode = parseInt(document.getElementById('startNode').value);
         if (!startNode) return alert('Enter a valid start node ID');
@@ -43,13 +108,10 @@
         try {
             const res = await axios.post('/api/find_nearest_hospital', { start_node: startNode });
             const data = res.data;
-
-            // Remove old markers/routes
             if (routeLayer) map.removeLayer(routeLayer);
             if (startMarker) map.removeLayer(startMarker);
             if (hospitalMarker) map.removeLayer(hospitalMarker);
 
-            // Draw the route
             const latlngs = data.path.map(p => [p.lat, p.lng]);
             routeLayer = L.polyline(latlngs, { color: 'red', weight: 5 }).addTo(map);
             map.fitBounds(routeLayer.getBounds());
@@ -63,15 +125,13 @@
             // Add hospital marker
             hospitalMarker = L.marker(latlngs[latlngs.length - 1], {
                 icon: L.icon({
-                    iconUrl: '/static/img/hospital.png', // put a hospital icon here
+                    iconUrl: hospitalIcon, // put a hospital icon here
                     iconSize: [30, 30]
                 })
             })
             .addTo(map)
             .bindPopup(`Hospital: ${data.path_names[data.path_names.length - 1]}`)
             .openPopup();
-
-            // Update info panel
             document.getElementById('routeInfo').textContent =
                 `Nearest Hospital: ${data.path_names[data.path_names.length-1]} | Distance: ${data.distance} km | ETA: ${data.eta} mins`;
 
