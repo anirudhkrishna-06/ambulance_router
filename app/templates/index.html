@@ -100,7 +100,78 @@
             console.error(err);
         });
 
-        
+
+    const searchInput = document.getElementById('startNodeSearch');
+    const suggestionsDiv = document.getElementById('suggestions');
+
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase().trim();
+        suggestionsDiv.innerHTML = ''; // clear old suggestions
+
+        if (!query) return;
+
+        // Filter places from dataset
+        const matches = allNodes.filter(node =>
+            node.name.toLowerCase().includes(query)
+        );
+
+                // Build dropdown
+        if (matches.length > 0) {
+            suggestionsDiv.style.display = 'block';
+            matches.slice(0, 8).forEach(node => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.innerHTML = `
+                    <i class="fas fa-location-dot" style="margin-right:8px;"></i>
+                    <span>${node.name}</span>
+                `;
+                div.addEventListener('click', () => {
+                    selectLocation(node);
+                });
+                suggestionsDiv.appendChild(div);
+            });
+        } else {
+            suggestionsDiv.style.display = 'none';
+        }
+    });
+
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!suggestionsDiv.contains(e.target) && e.target !== searchInput) {
+            suggestionsDiv.style.display = 'none';
+        }
+    });
+
+    function selectLocation(node) {
+        selectedStartNodeId = node.id;
+        if (startMarker) map.removeLayer(startMarker);
+        startMarker = L.marker([node.lat, node.lon], { icon: emergencyIcon })
+            .addTo(map)
+            .bindPopup(`Start: ${node.name}`)
+            .openPopup();
+        searchInput.value = node.name;
+        map.setView([node.lat, node.lon], 14);
+
+
+    }
+    function getNearestNode(ln,lg){
+        let nearestNode = null;
+        let minDist = Infinity;
+        allNodes.forEach(node => {
+            const dist = Math.sqrt(Math.pow(node.lat - ln, 2) + Math.pow(node.lon - lg, 2));
+            if (dist < minDist) {
+                minDist = dist;
+                nearestNode = node;
+            }
+        });
+        return nearestNode;
+    }
+    
+    map.on('click', e => {
+        const nearest=getNearestNode(e.latlng.lat,e.latlng.lng);
+        if(nearest) selectLocation(nearest);
+    });
+
     document.getElementById('findRouteBtn').addEventListener('click', async () => {
         const startNode = parseInt(document.getElementById('startNode').value);
         if (!startNode) return alert('Enter a valid start node ID');
