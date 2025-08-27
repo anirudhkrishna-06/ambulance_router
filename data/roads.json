@@ -1,343 +1,412 @@
-{
-  "metadata": {
-    "city": "Chennai",
-    "state": "Tamil Nadu",
-    "country": "India",
-    "dataset_version": "2.0",
-    "last_updated": "2025-08-23",
-    "coordinate_system": "WGS84",
-    "total_nodes": 85,
-    "total_edges": 120,
-    "openstreetmap_integration": {
-      "overpass_api_url": "https://overpass-api.de/api/interpreter",
-      "nominatim_url": "https://nominatim.openstreetmap.org/search",
-      "supported_queries": ["hospitals", "clinics", "emergency_services", "roads", "junctions"]
-    },
-    "traffic_conditions": {
-      "peak_hours": ["07:00-10:00", "17:00-20:00"],
-      "traffic_multiplier": {
-        "low": 1.0,
-        "medium": 1.5,
-        "high": 2.5,
-        "severe": 4.0
+  {
+    "metadata": {
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "country": "India",
+      "dataset_version": "2.0",
+      "last_updated": "2025-08-23",
+      "coordinate_system": "WGS84",
+      "total_nodes": 85,
+      "total_edges": 120,
+      "openstreetmap_integration": {
+        "overpass_api_url": "https://overpass-api.de/api/interpreter",
+        "nominatim_url": "https://nominatim.openstreetmap.org/search",
+        "supported_queries": ["hospitals", "clinics", "emergency_services", "roads", "junctions"]
+      },
+      "traffic_conditions": {
+        "peak_hours": ["07:00-10:00", "17:00-20:00"],
+        "traffic_multiplier": {
+          "low": 1.0,
+          "medium": 1.5,
+          "high": 2.5,
+          "severe": 4.0
+        }
       }
-    }
-  },
+    },
 
-  "nodes": [
-    {"id": 1, "name": "Chennai Central Railway Station", "lat": 13.0827, "lon": 80.2707, "type": "transport_hub", "osm_id": "way/123456", "priority": "high"},
-    {"id": 2, "name": "Egmore Junction", "lat": 13.0733, "lon": 80.2609, "type": "transport_hub", "osm_id": "way/123457", "priority": "high"},
-    {"id": 3, "name": "Chennai International Airport", "lat": 12.9941, "lon": 80.1709, "type": "transport_hub", "osm_id": "way/123458", "priority": "high"},
-    {"id": 4, "name": "Koyambedu Bus Terminal", "lat": 13.0698, "lon": 80.1944, "type": "transport_hub", "osm_id": "way/123459", "priority": "medium"},
+      "nodes": [
+        {"id": 1, "name": "Chennai Central Railway Station", "lat": 13.0827, "lon": 80.2707, "type": "transport_hub", "osm_id": "way/123456", "priority": "high"},
+        {"id": 2, "name": "Egmore Junction", "lat": 13.0733, "lon": 80.2609, "type": "transport_hub", "osm_id": "way/123457", "priority": "high"},
+        {"id": 3, "name": "Chennai International Airport", "lat": 12.9941, "lon": 80.1709, "type": "transport_hub", "osm_id": "way/123458", "priority": "high"},
+        {"id": 4, "name": "Koyambedu Bus Terminal", "lat": 13.0698, "lon": 80.1944, "type": "transport_hub", "osm_id": "way/123459", "priority": "medium"},
 
-    {"id": 5, "name": "Anna Salai - Mount Road", "lat": 13.0604, "lon": 80.2670, "type": "major_road", "osm_id": "way/234567", "priority": "high"},
-    {"id": 6, "name": "Marina Beach", "lat": 13.0500, "lon": 80.2824, "type": "landmark", "osm_id": "way/234568", "priority": "medium"},
-    {"id": 7, "name": "T Nagar Commercial Area", "lat": 13.0418, "lon": 80.2337, "type": "commercial", "osm_id": "way/234569", "priority": "high"},
-    {"id": 8, "name": "Guindy Industrial Area", "lat": 13.0108, "lon": 80.2205, "type": "industrial", "osm_id": "way/234570", "priority": "medium"},
-    {"id": 9, "name": "Adyar River Bridge", "lat": 13.0067, "lon": 80.2572, "type": "bridge", "osm_id": "way/234571", "priority": "high"},
-    {"id": 10, "name": "Velachery Main Road", "lat": 12.9795, "lon": 80.2209, "type": "major_road", "osm_id": "way/234572", "priority": "medium"},
-    {"id": 11, "name": "OMR - Thiruvanmiyur", "lat": 12.9860, "lon": 80.2593, "type": "highway", "osm_id": "way/234573", "priority": "high"},
-    {"id": 12, "name": "Tambaram Town", "lat": 12.9229, "lon": 80.1275, "type": "suburban", "osm_id": "way/234574", "priority": "medium"},
-    {"id": 13, "name": "Porur Junction", "lat": 13.0378, "lon": 80.1563, "type": "junction", "osm_id": "way/234575", "priority": "medium"},
-    {"id": 14, "name": "Chrompet Main Road", "lat": 12.9516, "lon": 80.1462, "type": "major_road", "osm_id": "way/234576", "priority": "medium"},
-    {"id": 15, "name": "Pallavaram Junction", "lat": 12.9675, "lon": 80.1491, "type": "junction", "osm_id": "way/234577", "priority": "medium"},
-    {"id": 16, "name": "Mylapore Tank Area", "lat": 13.0338, "lon": 80.2669, "type": "residential", "osm_id": "way/234578", "priority": "medium"},
-    {"id": 17, "name": "Nungambakkam High Road", "lat": 13.0594, "lon": 80.2407, "type": "commercial", "osm_id": "way/234579", "priority": "high"},
-    {"id": 18, "name": "Anna Nagar Roundana", "lat": 13.0850, "lon": 80.2101, "type": "junction", "osm_id": "way/234580", "priority": "high"},
-    {"id": 19, "name": "Kilpauk Medical College Area", "lat": 13.0781, "lon": 80.2441, "type": "medical_zone", "osm_id": "way/234581", "priority": "high"},
-    {"id": 20, "name": "Vadapalani Metro Station", "lat": 13.0506, "lon": 80.2121, "type": "metro_station", "osm_id": "way/234582", "priority": "high"},
+      {"id": 5, "name": "Anna Salai - Mount Road", "lat": 13.0604, "lon": 80.2670, "type": "major_road", "osm_id": "way/234567", "priority": "high"},
+      {"id": 6, "name": "Marina Beach", "lat": 13.0500, "lon": 80.2824, "type": "landmark", "osm_id": "way/234568", "priority": "medium"},
+      {"id": 7, "name": "T Nagar Commercial Area", "lat": 13.0418, "lon": 80.2337, "type": "commercial", "osm_id": "way/234569", "priority": "high"},
+      {"id": 8, "name": "Guindy Industrial Area", "lat": 13.0108, "lon": 80.2205, "type": "industrial", "osm_id": "way/234570", "priority": "medium"},
+      {"id": 9, "name": "Adyar River Bridge", "lat": 13.0067, "lon": 80.2572, "type": "bridge", "osm_id": "way/234571", "priority": "high"},
+      {"id": 10, "name": "Velachery Main Road", "lat": 12.9795, "lon": 80.2209, "type": "major_road", "osm_id": "way/234572", "priority": "medium"},
+      {"id": 11, "name": "OMR - Thiruvanmiyur", "lat": 12.9860, "lon": 80.2593, "type": "highway", "osm_id": "way/234573", "priority": "high"},
+      {"id": 12, "name": "Tambaram Town", "lat": 12.9229, "lon": 80.1275, "type": "suburban", "osm_id": "way/234574", "priority": "medium"},
+      {"id": 13, "name": "Porur Junction", "lat": 13.0378, "lon": 80.1563, "type": "junction", "osm_id": "way/234575", "priority": "medium"},
+      {"id": 14, "name": "Chrompet Main Road", "lat": 12.9516, "lon": 80.1462, "type": "major_road", "osm_id": "way/234576", "priority": "medium"},
+      {"id": 15, "name": "Pallavaram Junction", "lat": 12.9675, "lon": 80.1491, "type": "junction", "osm_id": "way/234577", "priority": "medium"},
+      {"id": 16, "name": "Mylapore Tank Area", "lat": 13.0338, "lon": 80.2669, "type": "residential", "osm_id": "way/234578", "priority": "medium"},
+      {"id": 17, "name": "Nungambakkam High Road", "lat": 13.0594, "lon": 80.2407, "type": "commercial", "osm_id": "way/234579", "priority": "high"},
+      {"id": 18, "name": "Anna Nagar Roundana", "lat": 13.0850, "lon": 80.2101, "type": "junction", "osm_id": "way/234580", "priority": "high"},
+      {"id": 19, "name": "Kilpauk Medical College Area", "lat": 13.0781, "lon": 80.2441, "type": "medical_zone", "osm_id": "way/234581", "priority": "high"},
+      {"id": 20, "name": "Vadapalani Metro Station", "lat": 13.0506, "lon": 80.2121, "type": "metro_station", "osm_id": "way/234582", "priority": "high"},
 
-    {"id": 21, "name": "Thiruvottiyur", "lat": 13.1581, "lon": 80.3008, "type": "industrial", "osm_id": "way/345678", "priority": "medium"},
-    {"id": 22, "name": "Ennore Port", "lat": 13.2167, "lon": 80.3333, "type": "port", "osm_id": "way/345679", "priority": "low"},
-    {"id": 23, "name": "Manali Industrial Area", "lat": 13.1667, "lon": 80.2667, "type": "industrial", "osm_id": "way/345680", "priority": "medium"},
-    {"id": 24, "name": "Tondiarpet", "lat": 13.1167, "lon": 80.2833, "type": "residential", "osm_id": "way/345681", "priority": "medium"},
-    {"id": 25, "name": "Vyasarpadi", "lat": 13.1033, "lon": 80.2633, "type": "residential", "osm_id": "way/345682", "priority": "medium"},
+      {"id": 21, "name": "Thiruvottiyur", "lat": 13.1581, "lon": 80.3008, "type": "industrial", "osm_id": "way/345678", "priority": "medium"},
+      {"id": 22, "name": "Ennore Port", "lat": 13.2167, "lon": 80.3333, "type": "port", "osm_id": "way/345679", "priority": "low"},
+      {"id": 23, "name": "Manali Industrial Area", "lat": 13.1667, "lon": 80.2667, "type": "industrial", "osm_id": "way/345680", "priority": "medium"},
+      {"id": 24, "name": "Tondiarpet", "lat": 13.1167, "lon": 80.2833, "type": "residential", "osm_id": "way/345681", "priority": "medium"},
+      {"id": 25, "name": "Vyasarpadi", "lat": 13.1033, "lon": 80.2633, "type": "residential", "osm_id": "way/345682", "priority": "medium"},
 
-    {"id": 26, "name": "Sholinganallur IT Hub", "lat": 12.9010, "lon": 80.2279, "type": "it_park", "osm_id": "way/456789", "priority": "high"},
-    {"id": 27, "name": "Navalur", "lat": 12.8410, "lon": 80.2279, "type": "it_park", "osm_id": "way/456790", "priority": "medium"},
-    {"id": 28, "name": "Kelambakkam", "lat": 12.8441, "lon": 80.1943, "type": "suburban", "osm_id": "way/456791", "priority": "low"},
-    {"id": 29, "name": "Siruseri SIPCOT", "lat": 12.8219, "lon": 80.2009, "type": "it_park", "osm_id": "way/456792", "priority": "medium"},
-    {"id": 30, "name": "Medavakkam", "lat": 12.9200, "lon": 80.1919, "type": "residential", "osm_id": "way/456793", "priority": "medium"},
+      {"id": 26, "name": "Sholinganallur IT Hub", "lat": 12.9010, "lon": 80.2279, "type": "it_park", "osm_id": "way/456789", "priority": "high"},
+      {"id": 27, "name": "Navalur", "lat": 12.8410, "lon": 80.2279, "type": "it_park", "osm_id": "way/456790", "priority": "medium"},
+      {"id": 28, "name": "Kelambakkam", "lat": 12.8441, "lon": 80.1943, "type": "suburban", "osm_id": "way/456791", "priority": "low"},
+      {"id": 29, "name": "Siruseri SIPCOT", "lat": 12.8219, "lon": 80.2009, "type": "it_park", "osm_id": "way/456792", "priority": "medium"},
+      {"id": 30, "name": "Medavakkam", "lat": 12.9200, "lon": 80.1919, "type": "residential", "osm_id": "way/456793", "priority": "medium"},
 
-    {"id": 31, "name": "Poonamallee", "lat": 13.0480, "lon": 80.0969, "type": "suburban", "osm_id": "way/567890", "priority": "medium"},
-    {"id": 32, "name": "Red Hills", "lat": 13.1833, "lon": 80.1667, "type": "reservoir_area", "osm_id": "way/567891", "priority": "low"},
-    {"id": 33, "name": "Avadi", "lat": 13.1147, "lon": 80.1006, "type": "cantonment", "osm_id": "way/567892", "priority": "medium"},
-    {"id": 34, "name": "Ambattur Industrial Estate", "lat": 13.1143, "lon": 80.1548, "type": "industrial", "osm_id": "way/567893", "priority": "medium"},
-    {"id": 35, "name": "Madhavaram", "lat": 13.1482, "lon": 80.2307, "type": "residential", "osm_id": "way/567894", "priority": "medium"},
+      {"id": 31, "name": "Poonamallee", "lat": 13.0480, "lon": 80.0969, "type": "suburban", "osm_id": "way/567890", "priority": "medium"},
+      {"id": 32, "name": "Red Hills", "lat": 13.1833, "lon": 80.1667, "type": "reservoir_area", "osm_id": "way/567891", "priority": "low"},
+      {"id": 33, "name": "Avadi", "lat": 13.1147, "lon": 80.1006, "type": "cantonment", "osm_id": "way/567892", "priority": "medium"},
+      {"id": 34, "name": "Ambattur Industrial Estate", "lat": 13.1143, "lon": 80.1548, "type": "industrial", "osm_id": "way/567893", "priority": "medium"},
+      {"id": 35, "name": "Madhavaram", "lat": 13.1482, "lon": 80.2307, "type": "residential", "osm_id": "way/567894", "priority": "medium"},
 
-    {"id": 36, "name": "ECR - Kovalam", "lat": 12.7886, "lon": 80.2519, "type": "coastal", "osm_id": "way/678901", "priority": "low"},
-    {"id": 37, "name": "Mahabalipuram Road Junction", "lat": 12.8200, "lon": 80.2200, "type": "highway", "osm_id": "way/678902", "priority": "medium"},
-    {"id": 38, "name": "Injambakkam", "lat": 12.9089, "lon": 80.2456, "type": "coastal", "osm_id": "way/678903", "priority": "low"},
-    {"id": 39, "name": "Besant Nagar Beach", "lat": 13.0005, "lon": 80.2665, "type": "coastal", "osm_id": "way/678904", "priority": "medium"},
-    {"id": 40, "name": "Royapettah", "lat": 13.0525, "lon": 80.2608, "type": "commercial", "osm_id": "way/678905", "priority": "high"},
+      {"id": 36, "name": "ECR - Kovalam", "lat": 12.7886, "lon": 80.2519, "type": "coastal", "osm_id": "way/678901", "priority": "low"},
+      {"id": 37, "name": "Mahabalipuram Road Junction", "lat": 12.8200, "lon": 80.2200, "type": "highway", "osm_id": "way/678902", "priority": "medium"},
+      {"id": 38, "name": "Injambakkam", "lat": 12.9089, "lon": 80.2456, "type": "coastal", "osm_id": "way/678903", "priority": "low"},
+      {"id": 39, "name": "Besant Nagar Beach", "lat": 13.0005, "lon": 80.2665, "type": "coastal", "osm_id": "way/678904", "priority": "medium"},
+      {"id": 40, "name": "Royapettah", "lat": 13.0525, "lon": 80.2608, "type": "commercial", "osm_id": "way/678905", "priority": "high"},
 
-    {"id": 41, "name": "Rajiv Gandhi Government General Hospital", "lat": 13.0800, "lon": 80.2780, "type": "hospital", "subtype": "government", "osm_id": "way/789012", "priority": "critical", "beds": 2800, "emergency": true, "trauma_center": true},
-    {"id": 42, "name": "Government Stanley Medical College Hospital", "lat": 13.0891, "lon": 80.2863, "type": "hospital", "subtype": "government", "osm_id": "way/789013", "priority": "critical", "beds": 1200, "emergency": true, "trauma_center": true},
-    {"id": 43, "name": "Kilpauk Medical College Hospital", "lat": 13.0781, "lon": 80.2441, "type": "hospital", "subtype": "government", "osm_id": "way/789014", "priority": "critical", "beds": 800, "emergency": true, "trauma_center": false},
-    {"id": 44, "name": "Madras Medical College Hospital", "lat": 13.0825, "lon": 80.2755, "type": "hospital", "subtype": "government", "osm_id": "way/789015", "priority": "critical", "beds": 1500, "emergency": true, "trauma_center": true},
-    {"id": 45, "name": "Institute of Mental Health", "lat": 13.0358, "lon": 80.2708, "type": "hospital", "subtype": "government", "osm_id": "way/789016", "priority": "high", "beds": 400, "emergency": false, "speciality": "psychiatry"},
+      {"id": 41, "name": "Rajiv Gandhi Government General Hospital", "lat": 13.0800, "lon": 80.2780, "type": "hospital", "subtype": "government", "osm_id": "way/789012", "priority": "critical", "beds": 2800, "emergency": true, "trauma_center": true},
+      {"id": 42, "name": "Government Stanley Medical College Hospital", "lat": 13.0891, "lon": 80.2863, "type": "hospital", "subtype": "government", "osm_id": "way/789013", "priority": "critical", "beds": 1200, "emergency": true, "trauma_center": true},
+      {"id": 43, "name": "Kilpauk Medical College Hospital", "lat": 13.0781, "lon": 80.2441, "type": "hospital", "subtype": "government", "osm_id": "way/789014", "priority": "critical", "beds": 800, "emergency": true, "trauma_center": false},
+      {"id": 44, "name": "Madras Medical College Hospital", "lat": 13.0825, "lon": 80.2755, "type": "hospital", "subtype": "government", "osm_id": "way/789015", "priority": "critical", "beds": 1500, "emergency": true, "trauma_center": true},
+      {"id": 45, "name": "Institute of Mental Health", "lat": 13.0358, "lon": 80.2708, "type": "hospital", "subtype": "government", "osm_id": "way/789016", "priority": "high", "beds": 400, "emergency": false, "speciality": "psychiatry"},
 
-    {"id": 46, "name": "Apollo Main Hospital", "lat": 13.0645, "lon": 80.2518, "type": "hospital", "subtype": "private", "osm_id": "way/890123", "priority": "critical", "beds": 550, "emergency": true, "trauma_center": true},
-    {"id": 47, "name": "Fortis Malar Hospital", "lat": 13.0102, "lon": 80.2555, "type": "hospital", "subtype": "private", "osm_id": "way/890124", "priority": "critical", "beds": 180, "emergency": true, "trauma_center": false},
-    {"id": 48, "name": "MIOT International Hospital", "lat": 13.0105, "lon": 80.1870, "type": "hospital", "subtype": "private", "osm_id": "way/890125", "priority": "critical", "beds": 1000, "emergency": true, "trauma_center": true},
-    {"id": 49, "name": "Global Health City", "lat": 12.8219, "lon": 80.2009, "type": "hospital", "subtype": "private", "osm_id": "way/890126", "priority": "critical", "beds": 1000, "emergency": true, "trauma_center": true},
-    {"id": 50, "name": "Dr. Rela Institute & Medical Centre", "lat": 13.0378, "lon": 80.1563, "type": "hospital", "subtype": "private", "osm_id": "way/890127", "priority": "critical", "beds": 450, "emergency": true, "trauma_center": true},
+      {"id": 46, "name": "Apollo Main Hospital", "lat": 13.0645, "lon": 80.2518, "type": "hospital", "subtype": "private", "osm_id": "way/890123", "priority": "critical", "beds": 550, "emergency": true, "trauma_center": true},
+      {"id": 47, "name": "Fortis Malar Hospital", "lat": 13.0102, "lon": 80.2555, "type": "hospital", "subtype": "private", "osm_id": "way/890124", "priority": "critical", "beds": 180, "emergency": true, "trauma_center": false},
+      {"id": 48, "name": "MIOT International Hospital", "lat": 13.0105, "lon": 80.1870, "type": "hospital", "subtype": "private", "osm_id": "way/890125", "priority": "critical", "beds": 1000, "emergency": true, "trauma_center": true},
+      {"id": 49, "name": "Global Health City", "lat": 12.8219, "lon": 80.2009, "type": "hospital", "subtype": "private", "osm_id": "way/890126", "priority": "critical", "beds": 1000, "emergency": true, "trauma_center": true},
+      {"id": 50, "name": "Dr. Rela Institute & Medical Centre", "lat": 13.0378, "lon": 80.1563, "type": "hospital", "subtype": "private", "osm_id": "way/890127", "priority": "critical", "beds": 450, "emergency": true, "trauma_center": true},
 
-    {"id": 51, "name": "Sankara Nethralaya", "lat": 13.0358, "lon": 80.2508, "type": "hospital", "subtype": "private", "osm_id": "way/901234", "priority": "high", "beds": 200, "emergency": false, "speciality": "ophthalmology"},
-    {"id": 52, "name": "Sri Ramachandra Hospital", "lat": 13.0135, "lon": 80.1956, "type": "hospital", "subtype": "private", "osm_id": "way/901235", "priority": "high", "beds": 1250, "emergency": true, "trauma_center": false},
-    {"id": 53, "name": "Billroth Hospitals", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/901236", "priority": "high", "beds": 200, "emergency": true, "trauma_center": false},
-    {"id": 54, "name": "Vijaya Hospital", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/901237", "priority": "high", "beds": 425, "emergency": true, "trauma_center": false},
-    {"id": 55, "name": "Bharath Hospital", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/901238", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+      {"id": 51, "name": "Sankara Nethralaya", "lat": 13.0358, "lon": 80.2508, "type": "hospital", "subtype": "private", "osm_id": "way/901234", "priority": "high", "beds": 200, "emergency": false, "speciality": "ophthalmology"},
+      {"id": 52, "name": "Sri Ramachandra Hospital", "lat": 13.0135, "lon": 80.1956, "type": "hospital", "subtype": "private", "osm_id": "way/901235", "priority": "high", "beds": 1250, "emergency": true, "trauma_center": false},
+      {"id": 53, "name": "Billroth Hospitals", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/901236", "priority": "high", "beds": 200, "emergency": true, "trauma_center": false},
+      {"id": 54, "name": "Vijaya Hospital", "lat": 13.0725, "lon": 80.2530, "type": "hospital", "subtype": "private", "osm_id": "way/901237", "priority": "high", "beds": 425, "emergency": true, "trauma_center": false},
+      {"id": 55, "name": "Bharath Hospital", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/901238", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
 
-    {"id": 56, "name": "Chromepet Government Hospital", "lat": 12.9516, "lon": 80.1462, "type": "hospital", "subtype": "government", "osm_id": "way/012345", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
-    {"id": 57, "name": "Tambaram Government Hospital", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/012346", "priority": "medium", "beds": 300, "emergency": true, "trauma_center": false},
-    {"id": 58, "name": "Thiruvottiyur Government Hospital", "lat": 13.1581, "lon": 80.3008, "type": "hospital", "subtype": "government", "osm_id": "way/012347", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
-    {"id": 59, "name": "Royapettah Hospital", "lat": 13.0525, "lon": 80.2608, "type": "hospital", "subtype": "private", "osm_id": "way/012348", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
-    {"id": 60, "name": "Vadapalani Murugan Hospital", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/012349", "priority": "medium", "beds": 100, "emergency": true, "trauma_center": false},
-
-
-    {"id": 61, "name": "Perambur Government Hospital", "lat": 13.1167, "lon": 80.2333, "type": "hospital", "subtype": "government", "osm_id": "way/123450", "priority": "medium", "beds": 100, "emergency": true, "trauma_center": false},
-    {"id": 62, "name": "Velachery Primary Health Center", "lat": 12.9795, "lon": 80.2209, "type": "hospital", "subtype": "government", "osm_id": "way/123451", "priority": "low", "beds": 50, "emergency": true, "trauma_center": false},
-    {"id": 63, "name": "Sholinganallur Medical Center", "lat": 12.9010, "lon": 80.2279, "type": "hospital", "subtype": "private", "osm_id": "way/123452", "priority": "medium", "beds": 80, "emergency": true, "trauma_center": false},
-    {"id": 64, "name": "OMR Karapakkam Hospital", "lat": 12.9089, "lon": 80.2456, "type": "hospital", "subtype": "private", "osm_id": "way/123453", "priority": "medium", "beds": 120, "emergency": true, "trauma_center": false},
-    {"id": 65, "name": "Poonamallee Government Hospital", "lat": 13.0480, "lon": 80.0969, "type": "hospital", "subtype": "government", "osm_id": "way/123454", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+      {"id": 56, "name": "Chromepet Government Hospital", "lat": 12.9516, "lon": 80.1462, "type": "hospital", "subtype": "government", "osm_id": "way/012345", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
+      {"id": 57, "name": "Tambaram Government Hospital", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/012346", "priority": "medium", "beds": 300, "emergency": true, "trauma_center": false},
+      {"id": 58, "name": "Thiruvottiyur Government Hospital", "lat": 13.1581, "lon": 80.3008, "type": "hospital", "subtype": "government", "osm_id": "way/012347", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+      {"id": 59, "name": "Royapettah Hospital", "lat": 13.0525, "lon": 80.2608, "type": "hospital", "subtype": "private", "osm_id": "way/012348", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
+      {"id": 60, "name": "Vadapalani Murugan Hospital", "lat": 13.0506, "lon": 80.2121, "type": "hospital", "subtype": "private", "osm_id": "way/012349", "priority": "medium", "beds": 100, "emergency": true, "trauma_center": false},
 
 
-    {"id": 66, "name": "Anna Nagar Police Station", "lat": 13.0850, "lon": 80.2101, "type": "emergency_service", "subtype": "police", "osm_id": "way/234560", "priority": "high"},
-    {"id": 67, "name": "Central Fire Station", "lat": 13.0827, "lon": 80.2707, "type": "emergency_service", "subtype": "fire", "osm_id": "way/234561", "priority": "high"},
-    {"id": 68, "name": "Ambulance Hub - Egmore", "lat": 13.0733, "lon": 80.2609, "type": "emergency_service", "subtype": "ambulance", "osm_id": "way/234562", "priority": "critical"},
-    {"id": 69, "name": "108 Emergency Control Room", "lat": 13.0604, "lon": 80.2670, "type": "emergency_service", "subtype": "control_room", "osm_id": "way/234563", "priority": "critical"},
-    {"id": 70, "name": "Coast Guard Station", "lat": 13.0500, "lon": 80.2824, "type": "emergency_service", "subtype": "coast_guard", "osm_id": "way/234564", "priority": "medium"},
+      {"id": 61, "name": "Perambur Government Hospital", "lat": 13.1167, "lon": 80.2333, "type": "hospital", "subtype": "government", "osm_id": "way/123450", "priority": "medium", "beds": 100, "emergency": true, "trauma_center": false},
+      {"id": 62, "name": "Velachery Primary Health Center", "lat": 12.9795, "lon": 80.2209, "type": "hospital", "subtype": "government", "osm_id": "way/123451", "priority": "low", "beds": 50, "emergency": true, "trauma_center": false},
+      {"id": 63, "name": "Sholinganallur Medical Center", "lat": 12.9010, "lon": 80.2279, "type": "hospital", "subtype": "private", "osm_id": "way/123452", "priority": "medium", "beds": 80, "emergency": true, "trauma_center": false},
+      {"id": 64, "name": "OMR Karapakkam Hospital", "lat": 12.9089, "lon": 80.2456, "type": "hospital", "subtype": "private", "osm_id": "way/123453", "priority": "medium", "beds": 120, "emergency": true, "trauma_center": false},
+      {"id": 65, "name": "Poonamallee Government Hospital", "lat": 13.0480, "lon": 80.0969, "type": "hospital", "subtype": "government", "osm_id": "way/123454", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
 
 
-    {"id": 71, "name": "GST Road - Guindy", "lat": 13.0108, "lon": 80.2205, "type": "highway", "osm_id": "way/345671", "priority": "high"},
-    {"id": 72, "name": "Inner Ring Road - Ashok Pillar", "lat": 13.0850, "lon": 80.2101, "type": "ring_road", "osm_id": "way/345672", "priority": "high"},
-    {"id": 73, "name": "Outer Ring Road - Madhavaram", "lat": 13.1482, "lon": 80.2307, "type": "ring_road", "osm_id": "way/345673", "priority": "high"},
-    {"id": 74, "name": "IT Expressway - Thoraipakkam", "lat": 12.9422, "lon": 80.2346, "type": "expressway", "osm_id": "way/345674", "priority": "high"},
-    {"id": 75, "name": "High Court Metro Station", "lat": 13.0838, "lon": 80.2750, "type": "metro_station", "osm_id": "way/345675", "priority": "high"},
+      {"id": 66, "name": "Anna Nagar Police Station", "lat": 13.0850, "lon": 80.2101, "type": "emergency_service", "subtype": "police", "osm_id": "way/234560", "priority": "high"},
+      {"id": 67, "name": "Central Fire Station", "lat": 13.0827, "lon": 80.2707, "type": "emergency_service", "subtype": "fire", "osm_id": "way/234561", "priority": "high"},
+      {"id": 68, "name": "Ambulance Hub - Egmore", "lat": 13.0733, "lon": 80.2609, "type": "emergency_service", "subtype": "ambulance", "osm_id": "way/234562", "priority": "critical"},
+      {"id": 69, "name": "108 Emergency Control Room", "lat": 13.0604, "lon": 80.2670, "type": "emergency_service", "subtype": "control_room", "osm_id": "way/234563", "priority": "critical"},
+      {"id": 70, "name": "Coast Guard Station", "lat": 13.0500, "lon": 80.2824, "type": "emergency_service", "subtype": "coast_guard", "osm_id": "way/234564", "priority": "medium"},
 
 
-    {"id": 76, "name": "Kanchipuram District Hospital", "lat": 12.8342, "lon": 79.7036, "type": "hospital", "subtype": "government", "osm_id": "way/456780", "priority": "medium", "beds": 400, "emergency": true, "trauma_center": false},
-    {"id": 77, "name": "Tiruvallur Government Hospital", "lat": 13.1439, "lon": 79.9094, "type": "hospital", "subtype": "government", "osm_id": "way/456781", "priority": "medium", "beds": 250, "emergency": true, "trauma_center": false},
-    {"id": 78, "name": "Maraimalai Nagar", "lat": 12.7690, "lon": 80.0335, "type": "suburban", "osm_id": "way/456782", "priority": "low"},
-    {"id": 79, "name": "Sriperumbudur Industrial Hub", "lat": 12.9655, "lon": 79.9426, "type": "industrial", "osm_id": "way/456783", "priority": "medium"},
-    {"id": 80, "name": "Oragadam Industrial Area", "lat": 12.9358, "lon": 79.9624, "type": "industrial", "osm_id": "way/456784", "priority": "medium"},
-
-    {"id": 81, "name": "Cancer Institute Adyar", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/567881", "priority": "critical", "beds": 250, "emergency": false, "speciality": "oncology"},
-    {"id": 82, "name": "National Institute of Siddha", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/567882", "priority": "low", "beds": 100, "emergency": false, "speciality": "traditional_medicine"},
-    {"id": 83, "name": "AIIMS Bibinagar (Satellite Center)", "lat": 12.8200, "lon": 80.2200, "type": "hospital", "subtype": "government", "osm_id": "way/567883", "priority": "critical", "beds": 200, "emergency": true, "trauma_center": false},
-    {"id": 84, "name": "Voluntary Health Services Hospital", "lat": 13.0005, "lon": 80.2665, "type": "hospital", "subtype": "private", "osm_id": "way/567884", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
-    {"id": 85, "name": "Lifeline Hospital", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/567885", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false}
-  ],
-
-  "edges": [
-
-    {"from": 1, "to": 2, "distance": 2.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
-    {"from": 1, "to": 5, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
-    {"from": 1, "to": 19, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "local", "speed_limit": 30, "lanes": 2},
-    {"from": 2, "to": 6, "distance": 4.0, "traffic_delay": 0, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
-    {"from": 2, "to": 5, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 2, "to": 17, "distance": 2.8, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 30, "lanes": 4},
-    
-    {"from": 1, "to": 42, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 1, "to": 41, "distance": 1.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 5, "to": 46, "distance": 1.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 19, "to": 43, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 9, "to": 47, "distance": 1.2, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 8, "to": 48, "distance": 2.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 13, "to": 50, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    
-
-    {"from": 5, "to": 7, "distance": 4.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
-    {"from": 5, "to": 9, "distance": 5.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 5, "to": 17, "distance": 3.2, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
-    {"from": 6, "to": 9, "distance": 6.0, "traffic_delay": 2, "blocked": false, "road_type": "coastal", "speed_limit": 60, "lanes": 4},
-    {"from": 7, "to": 8, "distance": 3.5, "traffic_delay": 0, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 8, "to": 10, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 9, "to": 11, "distance": 3.0, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
-    {"from": 10, "to": 11, "distance": 2.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 10, "to": 12, "distance": 9.0, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
-
-    {"from": 18, "to": 72, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 6},
-    {"from": 72, "to": 20, "distance": 8.5, "traffic_delay": 2, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 6},
-    {"from": 20, "to": 13, "distance": 6.2, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 4},
-    {"from": 13, "to": 8, "distance": 4.8, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 4},
-
-    {"from": 18, "to": 35, "distance": 7.2, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 35, "to": 34, "distance": 3.8, "traffic_delay": 1, "blocked": false, "road_type": "industrial", "speed_limit": 40, "lanes": 4},
-    {"from": 34, "to": 33, "distance": 5.5, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 70, "lanes": 4},
-    {"from": 33, "to": 32, "distance": 8.2, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
-    {"from": 24, "to": 21, "distance": 6.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
-    {"from": 21, "to": 23, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "industrial", "speed_limit": 40, "lanes": 4},
-    {"from": 23, "to": 22, "distance": 7.8, "traffic_delay": 0, "blocked": false, "road_type": "port_road", "speed_limit": 60, "lanes": 4},
-    {"from": 25, "to": 24, "distance": 2.5, "traffic_delay": 2, "blocked": false, "road_type": "local", "speed_limit": 30, "lanes": 2},
-    {"from": 1, "to": 25, "distance": 3.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
+      {"id": 71, "name": "GST Road - Guindy", "lat": 13.0108, "lon": 80.2205, "type": "highway", "osm_id": "way/345671", "priority": "high"},
+      {"id": 72, "name": "Inner Ring Road - Ashok Pillar", "lat": 13.0850, "lon": 80.2101, "type": "ring_road", "osm_id": "way/345672", "priority": "high"},
+      {"id": 73, "name": "Outer Ring Road - Madhavaram", "lat": 13.1482, "lon": 80.2307, "type": "ring_road", "osm_id": "way/345673", "priority": "high"},
+      {"id": 74, "name": "IT Expressway - Thoraipakkam", "lat": 12.9422, "lon": 80.2346, "type": "expressway", "osm_id": "way/345674", "priority": "high"},
+      {"id": 75, "name": "High Court Metro Station", "lat": 13.0838, "lon": 80.2750, "type": "metro_station", "osm_id": "way/345675", "priority": "high"},
 
 
-    {"from": 11, "to": 26, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
-    {"from": 26, "to": 27, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "it_corridor", "speed_limit": 80, "lanes": 6},
-    {"from": 27, "to": 28, "distance": 4.2, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
-    {"from": 27, "to": 29, "distance": 3.8, "traffic_delay": 1, "blocked": false, "road_type": "it_corridor", "speed_limit": 60, "lanes": 4},
-    {"from": 26, "to": 74, "distance": 2.8, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
-    {"from": 10, "to": 30, "distance": 6.5, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 30, "to": 26, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"id": 76, "name": "Kanchipuram District Hospital", "lat": 12.8342, "lon": 79.7036, "type": "hospital", "subtype": "government", "osm_id": "way/456780", "priority": "medium", "beds": 400, "emergency": true, "trauma_center": false},
+      {"id": 77, "name": "Tiruvallur Government Hospital", "lat": 13.1439, "lon": 79.9094, "type": "hospital", "subtype": "government", "osm_id": "way/456781", "priority": "medium", "beds": 250, "emergency": true, "trauma_center": false},
+      {"id": 78, "name": "Maraimalai Nagar", "lat": 12.7690, "lon": 80.0335, "type": "suburban", "osm_id": "way/456782", "priority": "low"},
+      {"id": 79, "name": "Sriperumbudur Industrial Hub", "lat": 12.9655, "lon": 79.9426, "type": "industrial", "osm_id": "way/456783", "priority": "medium"},
+      {"id": 80, "name": "Oragadam Industrial Area", "lat": 12.9358, "lon": 79.9624, "type": "industrial", "osm_id": "way/456784", "priority": "medium"},
+
+      {"id": 81, "name": "Cancer Institute Adyar", "lat": 13.0067, "lon": 80.2572, "type": "hospital", "subtype": "private", "osm_id": "way/567881", "priority": "critical", "beds": 250, "emergency": false, "speciality": "oncology"},
+      {"id": 82, "name": "National Institute of Siddha", "lat": 12.9229, "lon": 80.1275, "type": "hospital", "subtype": "government", "osm_id": "way/567882", "priority": "low", "beds": 100, "emergency": false, "speciality": "traditional_medicine"},
+      {"id": 83, "name": "AIIMS Bibinagar (Satellite Center)", "lat": 12.8200, "lon": 80.2200, "type": "hospital", "subtype": "government", "osm_id": "way/567883", "priority": "critical", "beds": 200, "emergency": true, "trauma_center": false},
+      {"id": 84, "name": "Voluntary Health Services Hospital", "lat": 13.0005, "lon": 80.2665, "type": "hospital", "subtype": "private", "osm_id": "way/567884", "priority": "medium", "beds": 150, "emergency": true, "trauma_center": false},
+      {"id": 85, "name": "Lifeline Hospital", "lat": 13.0850, "lon": 80.2101, "type": "hospital", "subtype": "private", "osm_id": "way/567885", "priority": "medium", "beds": 200, "emergency": true, "trauma_center": false},
+
+  {"id":86,"name": "Jaws Dental Foundation", "lat": 13.0929667, "lon": 80.2236256, "type": "hospital", "osm_id": "node/2559180846", "priority": "high"},
+  {"id": 87,"name": "Chennai Skin Foundation", "lat": 13.0205681, "lon": 80.2594702, "type": "hospital", "osm_id": "node/2587530810", "priority": "medium"},
+  {"id": 87,"name": "Sukrthi Nursing Home", "lat": 12.9710287, "lon": 80.2082964, "type": "hospital", "osm_id": "node/2669702938", "priority": "high"},
+  {"id": 88,"name": "Kauvery Hospital", "lat": 13.0381705, "lon": 80.2573008, "type": "hospital", "osm_id": "node/3118864398", "priority": "high"},
+  {"id": 89,"name": "Velachery SABA Hospital", "lat": 12.9862735, "lon": 80.2298924, "type": "hospital", "osm_id": "node/3372786283", "priority": "medium"},
+  {"id": 90,"name": "Kaya Skin clinic", "lat": 12.9767775, "lon": 80.2223505, "type": "hospital", "osm_id": "node/3687711447", "priority": "medium"},
+  {"id": 91,"name": "Pavithra Hospital", "lat": 13.1260907, "lon": 80.2488406, "type": "hospital", "osm_id": "node/3982078512", "priority": "medium"},
+  {"id": 92,"name": "Shankara Netralaya Eye Hospital", "lat": 13.0642564, "lon": 80.2497746, "type": "hospital", "osm_id": "node/4221573903", "priority": "medium"},
+  {"id": 93,"name": "Srinivasan Rajalakshmi Memorial Hospital", "lat": 12.9733792, "lon": 80.187599, "type": "hospital", "osm_id": "node/4329387869", "priority": "high"},
+  {"id": 94,"name": "Chennai Medical Centre Hospital", "lat": 13.0380047, "lon": 80.1889685, "type": "hospital", "osm_id": "node/4486583996", "priority": "medium"},
 
 
-    {"from": 13, "to": 31, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
-    {"from": 31, "to": 79, "distance": 6.2, "traffic_delay": 0, "blocked": false, "road_type": "industrial", "speed_limit": 60, "lanes": 4},
-    {"from": 79, "to": 80, "distance": 3.5, "traffic_delay": 0, "blocked": false, "road_type": "industrial", "speed_limit": 60, "lanes": 4},
-    {"from": 4, "to": 31, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
-    {"from": 3, "to": 15, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
-    {"from": 15, "to": 14, "distance": 2.8, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 14, "to": 12, "distance": 3.2, "traffic_delay": 1, "blocked": false, "road_type": "suburban", "speed_limit": 50, "lanes": 4},
-
-
-    {"from": 11, "to": 38, "distance": 8.2, "traffic_delay": 1, "blocked": false, "road_type": "coastal_highway", "speed_limit": 80, "lanes": 6},
-    {"from": 38, "to": 36, "distance": 15.5, "traffic_delay": 0, "blocked": false, "road_type": "coastal_highway", "speed_limit": 100, "lanes": 6},
-    {"from": 9, "to": 39, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
-    {"from": 39, "to": 38, "distance": 12.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal_highway", "speed_limit": 80, "lanes": 6},
-    {"from": 37, "to": 27, "distance": 4.5, "traffic_delay": 1, "blocked": false, "road_type": "connector", "speed_limit": 60, "lanes": 4},
-
-    {"from": 20, "to": 75, "distance": 8.5, "traffic_delay": 0, "blocked": false, "road_type": "metro_feeder", "speed_limit": 40, "lanes": 4},
-    {"from": 75, "to": 1, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "metro_feeder", "speed_limit": 30, "lanes": 2},
-    {"from": 75, "to": 5, "distance": 1.8, "traffic_delay": 1, "blocked": false, "road_type": "metro_feeder", "speed_limit": 30, "lanes": 2},
-    {"from": 4, "to": 18, "distance": 9.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
-
+  {"id": 95,"name": "Kalaignar Karunanidhi Nagar", "lat": 13.0386493, "lon": 80.2052158, "type": "hospital", "osm_id": "node/248420920", "priority": "medium"},
+  {"id": 96,"name": "Kasimedu", "lat": 13.1227750, "lon": 80.2960584, "type": "hospital", "osm_id": "node/248560797", "priority": "medium"},
+  {"id": 97,"name": "Amrit Hospital", "lat": 13.0922007, "lon": 80.2792912, "type": "hospital", "osm_id": "node/258978416", "priority": "medium"},
+  {"id": 98,"name": "Vikram Hospital", "lat": 13.0985007, "lon": 80.2796178, "type": "hospital", "osm_id": "node/258978417", "priority": "medium"},
+  {"id": 99,"name": "City Tower Hospitals", "lat": 13.0843800, "lon": 80.2160862, "type": "hospital", "osm_id": "node/262452334", "priority": "medium"},
+  {"id": 100,"name": "Apollo Hospitals, Tondiarpet", "lat": 13.1289367, "lon": 80.2905623, "type": "hospital", "osm_id": "node/289486820", "priority": "high"},
+  {"id": 101,"name": "Dr. Mehta's Hospitals", "lat": 13.0826803, "lon": 80.2707184, "type": "hospital", "osm_id": "node/295544110", "priority": "high"},
   
-    {"from": 12, "to": 57, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 14, "to": 56, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 21, "to": 58, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 40, "to": 59, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 20, "to": 60, "distance": 0.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 26, "to": 63, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 31, "to": 65, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 29, "to": 49, "distance": 1.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 8, "to": 52, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+    {"id": 102, "name": "Soundarapandian Bone and Joint Hospital Research Institute Pvt. Ltd.", "lat": 13.0835957, "lon": 80.2156462, "type": "hospital", "osm_id": "node/6914768086", "priority": "high"},
+    {"id": 103, "name": "Dr. U. Mohan Rau Memorial Hospital - Chennai", "lat": 13.0794940, "lon": 80.2572808, "type": "hospital", "osm_id": "node/6914768088", "priority": "high"},
+    {"id": 104, "name": "Chennai Cancer Care", "lat": 13.0762935, "lon": 80.2340260, "type": "hospital", "osm_id": "node/6914880538", "priority": "high"},
+    {"id": 105, "name": "Chennai Eye Care Hospital", "lat": 12.9789449, "lon": 80.2246302, "type": "hospital", "osm_id": "node/6914880539", "priority": "medium"},
+    {"id": 106, "name": "Chennai Heart Centre", "lat": 13.0917939, "lon": 80.2410534, "type": "hospital", "osm_id": "node/6914880540", "priority": "high"},
+    {"id": 107, "name": "Chennai Kaliappa Hospital", "lat": 13.0268492, "lon": 80.2558082, "type": "hospital", "osm_id": "node/6914880546", "priority": "medium"},
+    {"id": 108, "name": "Mots Hospital", "lat": 13.0833606, "lon": 80.2341561, "type": "hospital", "osm_id": "node/6914880552", "priority": "high"},
+    {"id": 109, "name": "Vasanthi Orthopaedic Hospital", "lat": 13.0723588, "lon": 80.2157642, "type": "hospital", "osm_id": "node/6914880584", "priority": "high"},
+    {"id": 110, "name": "R.K. Gynaec And Maternity Hospital", "lat": 13.0788127, "lon": 80.2481786, "type": "hospital", "osm_id": "node/6914896212", "priority": "high"},
+    {"id": 111, "name": "R.G. Stone Urological Research Institute", "lat": 13.0240792, "lon": 80.2278288, "type": "hospital", "osm_id": "node/6914896214", "priority": "medium"},
+    {"id": 112, "name": "R. K. Eye Centre", "lat": 13.0485912, "lon": 80.2311788, "type": "hospital", "osm_id": "node/6914896215", "priority": "high"},
+    {"id": 113, "name": "Psymed Hospiyal", "lat": 13.0714757, "lon": 80.2317998, "type": "hospital", "osm_id": "node/6914896269", "priority": "high"},
+    {"id": 114, "name": "Vasanthram Hospital (P) Ltd.,", "lat": 13.0433091, "lon": 80.2187696, "type": "hospital", "osm_id": "node/6914911764", "priority": "high"},
+    {"id": 115, "name": "Vadapalani Multispeciality Hospital", "lat": 13.0516559, "lon": 80.2133146, "type": "hospital", "osm_id": "node/6914927162", "priority": "high"},
+    {"id": 116, "name": "Sri Ramachandra Hospital", "lat": 13.0378713, "lon": 80.1402023, "type": "hospital", "osm_id": "node/6914937617", "priority": "low"}
 
 
-    {"from": 16, "to": 51, "distance": 1.0, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 17, "to": 53, "distance": 1.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 17, "to": 54, "distance": 1.2, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 18, "to": 55, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 9, "to": 81, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 39, "to": 84, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 18, "to": 85, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
 
-    {"from": 5, "to": 40, "distance": 2.2, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
-    {"from": 40, "to": 16, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "residential", "speed_limit": 40, "lanes": 4},
-    {"from": 16, "to": 6, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
-    {"from": 7, "to": 16, "distance": 5.5, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
-    {"from": 7, "to": 20, "distance": 6.8, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-
-
-    {"from": 1, "to": 68, "distance": 2.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 60, "lanes": 4},
-    {"from": 5, "to": 69, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 40, "lanes": 2},
-    {"from": 1, "to": 67, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 40, "lanes": 2},
-    {"from": 18, "to": 66, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 6, "to": 70, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-
-
-    {"from": 12, "to": 78, "distance": 18.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 100, "lanes": 4},
-    {"from": 78, "to": 76, "distance": 25.2, "traffic_delay": 0, "blocked": false, "road_type": "state_highway", "speed_limit": 80, "lanes": 4},
-    {"from": 33, "to": 77, "distance": 22.8, "traffic_delay": 0, "blocked": false, "road_type": "state_highway", "speed_limit": 80, "lanes": 4},
-    {"from": 37, "to": 83, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-
-    {"from": 8, "to": 71, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 8},
-    {"from": 71, "to": 12, "distance": 15.2, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
-    {"from": 73, "to": 35, "distance": 0.8, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 80, "lanes": 6},
-    {"from": 35, "to": 4, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 60, "lanes": 6},
-    {"from": 74, "to": 38, "distance": 6.2, "traffic_delay": 1, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
-
-    {"from": 10, "to": 15, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 60, "lanes": 4},
-    {"from": 15, "to": 8, "distance": 7.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
-    {"from": 25, "to": 73, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 80, "lanes": 6},
-    {"from": 30, "to": 74, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
-    {"from": 38, "to": 64, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 62, "to": 10, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
-    {"from": 61, "to": 25, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "local", "speed_limit": 40, "lanes": 2}
-  ],
-
-  "traffic_patterns": {
-    "peak_morning": {
-      "time": "07:00-10:00",
-      "affected_roads": ["arterial", "commercial", "highway"],
-      "multiplier": 2.5
-    },
-    "peak_evening": {
-      "time": "17:00-20:00", 
-      "affected_roads": ["arterial", "commercial", "it_corridor"],
-      "multiplier": 3.0
-    },
-    "weekend_leisure": {
-      "time": "weekend",
-      "affected_roads": ["coastal", "coastal_highway", "recreational"],
-      "multiplier": 1.8
-    },
-    "night_emergency": {
-      "time": "22:00-06:00",
-      "affected_roads": ["emergency"],
-      "multiplier": 0.5
-    }
-  },
-
-  "openstreetmap_integration": {
-    "queries": {
-      "hospitals": {
-        "overpass_query": "[out:json][timeout:25];(node[\"amenity\"=\"hospital\"](bbox);way[\"amenity\"=\"hospital\"](bbox);relation[\"amenity\"=\"hospital\"](bbox););out geom;",
-        "update_frequency": "weekly"
-      },
-      "emergency_services": {
-        "overpass_query": "[out:json][timeout:25];(node[\"emergency\"~\".*\"](bbox);way[\"emergency\"~\".*\"](bbox););out geom;",
-        "update_frequency": "daily"
-      },
-      "roads": {
-        "overpass_query": "[out:json][timeout:60];(way[\"highway\"~\"^(motorway|trunk|primary|secondary|tertiary)$\"](bbox););out geom;",
-        "update_frequency": "monthly"
-      },
-      "traffic_signals": {
-        "overpass_query": "[out:json][timeout:25];(node[\"highway\"=\"traffic_signals\"](bbox););out geom;",
-        "update_frequency": "monthly"
-      }
-    },
-    "bbox": {
-      "south": 12.7000,
-      "west": 79.9000,
-      "north": 13.3000,
-      "east": 80.4000
-    }
-  },
-
-  "algorithms": {
-    "a_star": {
-      "heuristic": "haversine_distance",
-      "cost_function": "distance + traffic_delay + hospital_priority_bonus",
-      "emergency_mode": {
-        "ignore_traffic": false,
-        "priority_lanes": true,
-        "signal_override": true
-      }
-    },
-    "dijkstra": {
-      "fallback": true,
-      "use_case": "when destination hospital not specified"
-    },
-    "dynamic_routing": {
-      "real_time_traffic": true,
-      "road_closure_detection": true,
-      "alternative_route_calculation": 3
-    }
-  },
-
-  "emergency_protocols": {
-    "hospital_selection_criteria": [
-      "distance",
-      "traffic_conditions", 
-      "hospital_capacity",
-      "speciality_match",
-      "trauma_center_availability"
     ],
-    "priority_hospitals": [41, 42, 46, 48, 49, 50],
-    "backup_routes": 3,
-    "communication_nodes": [67, 68, 69]
+
+    "edges": [
+
+      {"from": 1, "to": 2, "distance": 2.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
+      {"from": 1, "to": 5, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
+      {"from": 1, "to": 19, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "local", "speed_limit": 30, "lanes": 2},
+      {"from": 2, "to": 6, "distance": 4.0, "traffic_delay": 0, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
+      {"from": 2, "to": 5, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 2, "to": 17, "distance": 2.8, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 30, "lanes": 4},
+      
+      {"from": 1, "to": 42, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 1, "to": 41, "distance": 1.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 5, "to": 46, "distance": 1.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 19, "to": 43, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 9, "to": 47, "distance": 1.2, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 8, "to": 48, "distance": 2.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 13, "to": 50, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      
+
+      {"from": 5, "to": 7, "distance": 4.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
+      {"from": 5, "to": 9, "distance": 5.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 5, "to": 17, "distance": 3.2, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
+      {"from": 6, "to": 9, "distance": 6.0, "traffic_delay": 2, "blocked": false, "road_type": "coastal", "speed_limit": 60, "lanes": 4},
+      {"from": 7, "to": 8, "distance": 3.5, "traffic_delay": 0, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 8, "to": 10, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 9, "to": 11, "distance": 3.0, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
+      {"from": 10, "to": 11, "distance": 2.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 10, "to": 12, "distance": 9.0, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
+
+      {"from": 18, "to": 72, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 6},
+      {"from": 72, "to": 20, "distance": 8.5, "traffic_delay": 2, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 6},
+      {"from": 20, "to": 13, "distance": 6.2, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 4},
+      {"from": 13, "to": 8, "distance": 4.8, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 60, "lanes": 4},
+
+      {"from": 18, "to": 35, "distance": 7.2, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 35, "to": 34, "distance": 3.8, "traffic_delay": 1, "blocked": false, "road_type": "industrial", "speed_limit": 40, "lanes": 4},
+      {"from": 34, "to": 33, "distance": 5.5, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 70, "lanes": 4},
+      {"from": 33, "to": 32, "distance": 8.2, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
+      {"from": 24, "to": 21, "distance": 6.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
+      {"from": 21, "to": 23, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "industrial", "speed_limit": 40, "lanes": 4},
+      {"from": 23, "to": 22, "distance": 7.8, "traffic_delay": 0, "blocked": false, "road_type": "port_road", "speed_limit": 60, "lanes": 4},
+      {"from": 25, "to": 24, "distance": 2.5, "traffic_delay": 2, "blocked": false, "road_type": "local", "speed_limit": 30, "lanes": 2},
+      {"from": 1, "to": 25, "distance": 3.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 4},
+
+
+      {"from": 11, "to": 26, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
+      {"from": 26, "to": 27, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "it_corridor", "speed_limit": 80, "lanes": 6},
+      {"from": 27, "to": 28, "distance": 4.2, "traffic_delay": 0, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 4},
+      {"from": 27, "to": 29, "distance": 3.8, "traffic_delay": 1, "blocked": false, "road_type": "it_corridor", "speed_limit": 60, "lanes": 4},
+      {"from": 26, "to": 74, "distance": 2.8, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
+      {"from": 10, "to": 30, "distance": 6.5, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 30, "to": 26, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+
+
+      {"from": 13, "to": 31, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
+      {"from": 31, "to": 79, "distance": 6.2, "traffic_delay": 0, "blocked": false, "road_type": "industrial", "speed_limit": 60, "lanes": 4},
+      {"from": 79, "to": 80, "distance": 3.5, "traffic_delay": 0, "blocked": false, "road_type": "industrial", "speed_limit": 60, "lanes": 4},
+      {"from": 4, "to": 31, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
+      {"from": 3, "to": 15, "distance": 8.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
+      {"from": 15, "to": 14, "distance": 2.8, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 14, "to": 12, "distance": 3.2, "traffic_delay": 1, "blocked": false, "road_type": "suburban", "speed_limit": 50, "lanes": 4},
+
+
+      {"from": 11, "to": 38, "distance": 8.2, "traffic_delay": 1, "blocked": false, "road_type": "coastal_highway", "speed_limit": 80, "lanes": 6},
+      {"from": 38, "to": 36, "distance": 15.5, "traffic_delay": 0, "blocked": false, "road_type": "coastal_highway", "speed_limit": 100, "lanes": 6},
+      {"from": 9, "to": 39, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
+      {"from": 39, "to": 38, "distance": 12.5, "traffic_delay": 1, "blocked": false, "road_type": "coastal_highway", "speed_limit": 80, "lanes": 6},
+      {"from": 37, "to": 27, "distance": 4.5, "traffic_delay": 1, "blocked": false, "road_type": "connector", "speed_limit": 60, "lanes": 4},
+
+      {"from": 20, "to": 75, "distance": 8.5, "traffic_delay": 0, "blocked": false, "road_type": "metro_feeder", "speed_limit": 40, "lanes": 4},
+      {"from": 75, "to": 1, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "metro_feeder", "speed_limit": 30, "lanes": 2},
+      {"from": 75, "to": 5, "distance": 1.8, "traffic_delay": 1, "blocked": false, "road_type": "metro_feeder", "speed_limit": 30, "lanes": 2},
+      {"from": 4, "to": 18, "distance": 9.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 6},
+
+    
+      {"from": 12, "to": 57, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 14, "to": 56, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 21, "to": 58, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 40, "to": 59, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 20, "to": 60, "distance": 0.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 26, "to": 63, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 31, "to": 65, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 29, "to": 49, "distance": 1.2, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 8, "to": 52, "distance": 2.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+
+
+      {"from": 16, "to": 51, "distance": 1.0, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 17, "to": 53, "distance": 1.5, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 17, "to": 54, "distance": 1.2, "traffic_delay": 1, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 18, "to": 55, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 9, "to": 81, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 39, "to": 84, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 18, "to": 85, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+
+      {"from": 5, "to": 40, "distance": 2.2, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
+      {"from": 40, "to": 16, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "residential", "speed_limit": 40, "lanes": 4},
+      {"from": 16, "to": 6, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "coastal", "speed_limit": 50, "lanes": 4},
+      {"from": 7, "to": 16, "distance": 5.5, "traffic_delay": 2, "blocked": false, "road_type": "commercial", "speed_limit": 40, "lanes": 4},
+      {"from": 7, "to": 20, "distance": 6.8, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+
+
+      {"from": 1, "to": 68, "distance": 2.0, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 60, "lanes": 4},
+      {"from": 5, "to": 69, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 40, "lanes": 2},
+      {"from": 1, "to": 67, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 40, "lanes": 2},
+      {"from": 18, "to": 66, "distance": 0.3, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 6, "to": 70, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+
+
+      {"from": 12, "to": 78, "distance": 18.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 100, "lanes": 4},
+      {"from": 78, "to": 76, "distance": 25.2, "traffic_delay": 0, "blocked": false, "road_type": "state_highway", "speed_limit": 80, "lanes": 4},
+      {"from": 33, "to": 77, "distance": 22.8, "traffic_delay": 0, "blocked": false, "road_type": "state_highway", "speed_limit": 80, "lanes": 4},
+      {"from": 37, "to": 83, "distance": 1.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+
+      {"from": 8, "to": 71, "distance": 0.5, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 8},
+      {"from": 71, "to": 12, "distance": 15.2, "traffic_delay": 1, "blocked": false, "road_type": "highway", "speed_limit": 80, "lanes": 6},
+      {"from": 73, "to": 35, "distance": 0.8, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 80, "lanes": 6},
+      {"from": 35, "to": 4, "distance": 12.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 60, "lanes": 6},
+      {"from": 74, "to": 38, "distance": 6.2, "traffic_delay": 1, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
+
+      {"from": 10, "to": 15, "distance": 4.2, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 60, "lanes": 4},
+      {"from": 15, "to": 8, "distance": 7.5, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+      {"from": 25, "to": 73, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "ring_road", "speed_limit": 80, "lanes": 6},
+      {"from": 30, "to": 74, "distance": 3.5, "traffic_delay": 2, "blocked": false, "road_type": "expressway", "speed_limit": 100, "lanes": 8},
+      {"from": 38, "to": 64, "distance": 0.8, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 62, "to": 10, "distance": 0.5, "traffic_delay": 0, "blocked": false, "road_type": "emergency", "speed_limit": 30, "lanes": 2},
+      {"from": 61, "to": 25, "distance": 2.2, "traffic_delay": 1, "blocked": false, "road_type": "local", "speed_limit": 40, "lanes": 2},
+
+      {"from": 86, "to": 87, "distance": 8.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 86, "to": 88, "distance": 6.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 86, "to": 89, "distance": 12.0, "traffic_delay": 3, "blocked": false, "road_type": "arterial", "speed_limit": 40, "lanes": 3},
+  {"from": 87, "to": 88, "distance": 4.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 87, "to": 91, "distance": 12.0, "traffic_delay": 3, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 88, "to": 92, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 88, "to": 94, "distance": 7.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 89, "to": 90, "distance": 2.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 90, "to": 105, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 91, "to": 100, "distance": 8.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 92, "to": 108, "distance": 5.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 93, "to": 90, "distance": 5.0, "traffic_delay": 2, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 94, "to": 95, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 95, "to": 108, "distance": 4.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 3},
+  {"from": 96, "to": 100, "distance": 6.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 97, "to": 98, "distance": 1.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 97, "to": 101, "distance": 5.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 98, "to": 100, "distance": 6.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 99, "to": 102, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 3},
+  {"from": 102, "to": 103, "distance": 2.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 103, "to": 104, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 104, "to": 108, "distance": 5.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 105, "to": 106, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 106, "to": 108, "distance": 4.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 107, "to": 108, "distance": 3.0, "traffic_delay": 1, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 109, "to": 112, "distance": 6.0, "traffic_delay": 2, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 110, "to": 113, "distance": 4.0, "traffic_delay": 1, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4},
+  {"from": 111, "to": 114, "distance": 5.0, "traffic_delay": 2, "blocked": false, "road_type": "residential", "speed_limit": 30, "lanes": 2},
+  {"from": 115, "to": 116, "distance": 8.0, "traffic_delay": 3, "blocked": false, "road_type": "arterial", "speed_limit": 50, "lanes": 4}
+    ],
+
+    "traffic_patterns": {
+      "peak_morning": {
+        "time": "07:00-10:00",
+        "affected_roads": ["arterial", "commercial", "highway"],
+        "multiplier": 2.5
+      },
+      "peak_evening": {
+        "time": "17:00-20:00", 
+        "affected_roads": ["arterial", "commercial", "it_corridor"],
+        "multiplier": 3.0
+      },
+      "weekend_leisure": {
+        "time": "weekend",
+        "affected_roads": ["coastal", "coastal_highway", "recreational"],
+        "multiplier": 1.8
+      },
+      "night_emergency": {
+        "time": "22:00-06:00",
+        "affected_roads": ["emergency"],
+        "multiplier": 0.5
+      }
+    },
+
+    "openstreetmap_integration": {
+      "queries": {
+        "hospitals": {
+          "overpass_query": "[out:json][timeout:25];(node[\"amenity\"=\"hospital\"](bbox);way[\"amenity\"=\"hospital\"](bbox);relation[\"amenity\"=\"hospital\"](bbox););out geom;",
+          "update_frequency": "weekly"
+        },
+        "emergency_services": {
+          "overpass_query": "[out:json][timeout:25];(node[\"emergency\"~\".*\"](bbox);way[\"emergency\"~\".*\"](bbox););out geom;",
+          "update_frequency": "daily"
+        },
+        "roads": {
+          "overpass_query": "[out:json][timeout:60];(way[\"highway\"~\"^(motorway|trunk|primary|secondary|tertiary)$\"](bbox););out geom;",
+          "update_frequency": "monthly"
+        },
+        "traffic_signals": {
+          "overpass_query": "[out:json][timeout:25];(node[\"highway\"=\"traffic_signals\"](bbox););out geom;",
+          "update_frequency": "monthly"
+        }
+      },
+      "bbox": {
+        "south": 12.7000,
+        "west": 79.9000,
+        "north": 13.3000,
+        "east": 80.4000
+      }
+    },
+
+    "algorithms": {
+      "a_star": {
+        "heuristic": "haversine_distance",
+        "cost_function": "distance + traffic_delay + hospital_priority_bonus",
+        "emergency_mode": {
+          "ignore_traffic": false,
+          "priority_lanes": true,
+          "signal_override": true
+        }
+      },
+      "dijkstra": {
+        "fallback": true,
+        "use_case": "when destination hospital not specified"
+      },
+      "dynamic_routing": {
+        "real_time_traffic": true,
+        "road_closure_detection": true,
+        "alternative_route_calculation": 3
+      }
+    },
+
+    "emergency_protocols": {
+      "hospital_selection_criteria": [
+        "distance",
+        "traffic_conditions", 
+        "hospital_capacity",
+        "speciality_match",
+        "trauma_center_availability"
+      ],
+      "priority_hospitals": [41, 42, 46, 48, 49, 50],
+      "backup_routes": 3,
+      "communication_nodes": [67, 68, 69]
+    }
   }
-}
